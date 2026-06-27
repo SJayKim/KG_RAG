@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Env / secrets
+.env
+*.key
+secrets.*
+
+# Data (do NOT commit licensed/large data — see docs/RESEARCH.md license rules)
+data/
+*.csv
+*.tsv
+*.parquet
+*.dump
+neo4j/data/
+
+# Private QA references (license: never commit — DrugBank / Flockhart / PharmGKB)
+qa-private/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
