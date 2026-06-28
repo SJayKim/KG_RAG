@@ -20,6 +20,11 @@ data/
 *.dump
 neo4j/data/
 
+# Demo snapshot IS committed (small, KOGL Type1 + CC0 permit redistribution) so the
+# live demo + `docker compose up` run with zero API keys. Keep fixtures out of the ignore.
+!fixtures/
+!fixtures/**
+
 # Private QA references (license: never commit — DrugBank / Flockhart / PharmGKB)
 qa-private/
 
