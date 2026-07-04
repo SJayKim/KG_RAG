@@ -1,0 +1,243 @@
+{
+  "header": {
+    "resultCode": "00",
+    "resultMsg": "NORMAL SERVICE."
+  },
+  "body": {
+    "pageNo": 1,
+    "totalCount": 1816,
+    "numOfRows": 10,
+    "items": [
+      {
+        "item": {
+          "TYPE_NAME": "병용금기",
+          "MIX_TYPE": "단일",
+          "INGR_CODE": "D000762",
+          "INGR_ENG_NAME": "Itraconazole",
+          "INGR_KOR_NAME": "이트라코나졸",
+          "MIX": "",
+          "ORI": "[M083733]이트라코나졸제피과립/[M083734]이트라코나졸/[M092870]이트라코나졸고체분산체/[M201487]이트라코나졸고체분산/[M201624]제피이트라코나졸과립",
+          "CLASS": "[06290]기타의 화학요법제",
+          "MIXTURE_MIX_TYPE": "단일",
+          "MIXTURE_INGR_CODE": "D000027",
+          "MIXTURE_INGR_ENG_NAME": "Simvastatin",
+          "MIXTURE_INGR_KOR_NAME": "심바스타틴",
+          "MIXTURE_MIX": "",
+          "MIXTURE_ORI": "[M089710]심바스타틴",
+          "MIXTURE_CLASS": "[02180]동맥경화용제",
+          "NOTIFICATION_DATE": "20090303",
+          "PROHBT_CONTENT": "횡문근융해증",
+          "REMARK": null,
+          "DEL_YN": "정상"
+        }
+      },
+      {
+        "item": {
+          "TYPE_NAME": "병용금기",
+          "MIX_TYPE": "단일",
+          "INGR_CODE": "D000762",
+          "INGR_ENG_NAME": "Itraconazole",
+          "INGR_KOR_NAME": "이트라코나졸",
+          "MIX": "",
+          "ORI": "[M083733]이트라코나졸제피과립/[M083734]이트라코나졸/[M092870]이트라코나졸고체분산체/[M201487]이트라코나졸고체분산/[M201624]제피이트라코나졸과립",
+          "CLASS": "[06290]기타의 화학요법제",
+          "MIXTURE_MIX_TYPE": "단일",
+          "MIXTURE_INGR_CODE": "D000592",
+          "MIXTURE_INGR_ENG_NAME": "Triazolam",
+          "MIXTURE_INGR_KOR_NAME": "트리아졸람",
+          "MIXTURE_MIX": "",
+          "MIXTURE_ORI": "[I005603]트리아졸람/[M088380]트리아졸람",
+          "MIXTURE_CLASS": "[01120]최면진정제",
+          "NOTIFICATION_DATE": "20090303",
+          "PROHBT_CONTENT": "triazolam 의 약리학적 효과 및 작용(수면유도 및 진정작용 등의 중추신경 억제 효과) 증가\n",
+          "REMARK": null,
+          "DEL_YN": "정상"
+        }
+      },
+      {
+        "item": {
+          "TYPE_NAME": "병용금기",
+          "MIX_TYPE": "단일",
+          "INGR_CODE": "D000353",
+          "INGR_ENG_NAME": "Paroxetine",
+          "INGR_KOR_NAME": "파록세틴",
+          "MIX": "",
+          "ORI": "[M050607]염산파록세틴/[M102324]무수염산파록세틴/[M222896]파록세틴염산염수화물/[M234807]파록세틴염산염반수화물",
+          "CLASS": "[01170]정신신경용제",
+          "MIXTURE_MIX_TYPE": "단일",
+          "MIXTURE_INGR_CODE": "D000139",
+          "MIXTURE_INGR_ENG_NAME": "Selegiline Hydrochloride",
+          "MIXTURE_INGR_KOR_NAME": "셀레길린염산염",
+          "MIXTURE_MIX": "",
+          "MIXTURE_ORI": "[M222864]셀레길린염산염",
+          "MIXTURE_CLASS": "[01190]기타의 중추신경용약",
+          "NOTIFICATION_DATE": "20090303",
+          "PROHBT_CONTENT": "세로토닌성 증후군(고혈압, 고열, 간대성 근경련, 정신상태 변화 등)\n",
+          "REMARK": null,
+          "DEL_YN": "정상"
+        }
+      },
+      {
+        "item": {
+          "TYPE_NAME": "병용금기",
+          "MIX_TYPE": "단일",
+          "INGR_CODE": "D000139",
+          "INGR_ENG_NAME": "Selegiline Hydrochloride",
+          "INGR_KOR_NAME": "셀레길린염산염",
+          "MIX": "",
+          "ORI": "[M222864]셀레길린염산염",
+          "CLASS": "[01190]기타의 중추신경용약",
+          "MIXTURE_MIX_TYPE": "단일",
+          "MIXTURE_INGR_CODE": "D000336",
+          "MIXTURE_INGR_ENG_NAME": "Sertraline",
+          "MIXTURE_INGR_KOR_NAME": "설트랄린",
+          "MIXTURE_MIX": "",
+          "MIXTURE_ORI": "[M085340]염산설트랄린/[M251308]설트랄린염산염",
+          "MIXTURE_CLASS": "[01170]정신신경용제",
+          "NOTIFICATION_DATE": "20090303",
+          "PROHBT_CONTENT": "세로토닌성 증후군 (고열, 간대성근경련, 정신상태 변화등)",
+          "REMARK": null,
+          "DEL_YN": "정상"
+        }
+      },
+      {
+        "item": {
+          "TYPE_NAME": "병용금기",
+          "MIX_TYPE": "단일",
+          "INGR_CODE": "D000660",
+          "INGR_ENG_NAME": "Alprazolam",
+          "INGR_KOR_NAME": "알프라졸람",
+          "MIX": "",
+          "ORI": "[M211313]알프라졸람/[M261118]알프라졸람",
+          "CLASS": "[01170]정신신경용제",
+          "MIXTURE_MIX_TYPE": "단일",
+          "MIXTURE_INGR_CODE": "D000762",
+          "MIXTURE_INGR_ENG_NAME": "Itraconazole",
+          "MIXTURE_INGR_KOR_NAME": "이트라코나졸",
+          "MIXTURE_MIX": "",
+          "MIXTURE_ORI": "[M083733]이트라코나졸제피과립/[M083734]이트라코나졸/[M092870]이트라코나졸고체분산체/[M201487]이트라코나졸고체분산/[M201624]제피이트라코나졸과립",
+          "MIXTURE_CLASS": "[06290]기타의 화학요법제",
+          "NOTIFICATION_DATE": "20090303",
+          "PROHBT_CONTENT": "alprazolam의 혈장농도 증가, 수면 및 진정작용 증강 및 연장\n",
+          "REMARK": null,
+          "DEL_YN": "정상"
+        }
+      },
+      {
+        "item": {
+          "TYPE_NAME": "병용금기",
+          "MIX_TYPE": "단일",
+          "INGR_CODE": "D000455",
+          "INGR_ENG_NAME": "Atorvastatin",
+          "INGR_KOR_NAME": "아토르바스타틴",
+          "MIX": "",
+          "ORI": "[I004369]아토르바스타틴칼슘수화물/[M093499]아토르바스타틴칼슘/[M213543]무수아토르바스타틴칼슘/[M215219]아토르바스타틴칼슘삼수화물/[M218956]아토르바스타틴삼수화물/[M244955]아토르바스타틴 스트론튬/[M247057]아토르바스타틴칼슘염무수물/[M251687]아토르바스타틴칼슘/[M256664]아토르바스타틴칼슘수화물/[M263837]아토르바스타틴",
+          "CLASS": "[02180]동맥경화용제",
+          "MIXTURE_MIX_TYPE": "단일",
+          "MIXTURE_INGR_CODE": "D000769",
+          "MIXTURE_INGR_ENG_NAME": "Ketoconazole",
+          "MIXTURE_INGR_KOR_NAME": "케토코나졸",
+          "MIXTURE_MIX": "",
+          "MIXTURE_ORI": "[M080618]케토코나졸",
+          "MIXTURE_CLASS": "[02650]기생성 피부질환용제/[06290]기타의 화학요법제/[06410]항원충제",
+          "NOTIFICATION_DATE": "20090303",
+          "PROHBT_CONTENT": "근육병증\n",
+          "REMARK": null,
+          "DEL_YN": "정상"
+        }
+      },
+      {
+        "item": {
+          "TYPE_NAME": "병용금기",
+          "MIX_TYPE": "복합",
+          "INGR_CODE": "D000747",
+          "INGR_ENG_NAME": "Ergotamine",
+          "INGR_KOR_NAME": "에르고타민",
+          "MIX": "[D001266]Anhydrous Caffeine(카페인무수물)",
+          "ORI": "[M040398]주석산에르고타민/[M223126]에르고타민타르타르산염/[M223183]카페인무수물",
+          "CLASS": "[01140]해열.진통.소염제",
+          "MIXTURE_MIX_TYPE": "단일",
+          "MIXTURE_INGR_CODE": "D000650",
+          "MIXTURE_INGR_ENG_NAME": "Sumatriptan",
+          "MIXTURE_INGR_KOR_NAME": "수마트립탄",
+          "MIXTURE_MIX": "",
+          "MIXTURE_ORI": "[M089467]호박산수마트립탄/[M246956]수마트립탄숙신산염",
+          "MIXTURE_CLASS": "[01140]해열.진통.소염제",
+          "NOTIFICATION_DATE": "20090303",
+          "PROHBT_CONTENT": "혈압상승 및 맥각독성(말초혈관수축증가) 위험\n",
+          "REMARK": null,
+          "DEL_YN": "정상"
+        }
+      },
+      {
+        "item": {
+          "TYPE_NAME": "병용금기",
+          "MIX_TYPE": "단일",
+          "INGR_CODE": "D000202",
+          "INGR_ENG_NAME": "Dihydroergotamine",
+          "INGR_KOR_NAME": "디히드로에르고타민",
+          "MIX": "",
+          "ORI": "[M086240]디히드로에르고타민메실레이트",
+          "CLASS": "[01140]해열.진통.소염제/[02190]기타의 순환계용약",
+          "MIXTURE_MIX_TYPE": "단일",
+          "MIXTURE_INGR_CODE": "D000628",
+          "MIXTURE_INGR_ENG_NAME": "Roxithromycin",
+          "MIXTURE_INGR_KOR_NAME": "록시트로마이신",
+          "MIXTURE_MIX": "",
+          "MIXTURE_ORI": "[M082720]록시스로마이신/[M104917]록시스로마이신제피세립/[M222840]록시트로마이신/[M222994]록시트로마이신/[M243529]제피된 록시트로마이신",
+          "MIXTURE_CLASS": "[06140]주로 그람양성균, 리케치아, 비루스에 작용하는 것",
+          "NOTIFICATION_DATE": "20090303",
+          "PROHBT_CONTENT": "맥각독성(혈관경련, 말단 및 기타조직 허혈)위험증가\n",
+          "REMARK": null,
+          "DEL_YN": "정상"
+        }
+      },
+      {
+        "item": {
+          "TYPE_NAME": "병용금기",
+          "MIX_TYPE": "단일",
+          "INGR_CODE": "D000762",
+          "INGR_ENG_NAME": "Itraconazole",
+          "INGR_KOR_NAME": "이트라코나졸",
+          "MIX": "",
+          "ORI": "[M083733]이트라코나졸제피과립/[M083734]이트라코나졸/[M092870]이트라코나졸고체분산체/[M201487]이트라코나졸고체분산/[M201624]제피이트라코나졸과립",
+          "CLASS": "[06290]기타의 화학요법제",
+          "MIXTURE_MIX_TYPE": "단일",
+          "MIXTURE_INGR_CODE": "D000419",
+          "MIXTURE_INGR_ENG_NAME": "Lovastatin",
+          "MIXTURE_INGR_KOR_NAME": "로바스타틴",
+          "MIXTURE_MIX": "",
+          "MIXTURE_ORI": "[M083392]로바스타틴",
+          "MIXTURE_CLASS": "[02180]동맥경화용제",
+          "NOTIFICATION_DATE": "20090303",
+          "PROHBT_CONTENT": "횡문근융해증\n",
+          "REMARK": null,
+          "DEL_YN": "정상"
+        }
+      },
+      {
+        "item": {
+          "TYPE_NAME": "병용금기",
+          "MIX_TYPE": "단일",
+          "INGR_CODE": "D000769",
+          "INGR_ENG_NAME": "Ketoconazole",
+          "INGR_KOR_NAME": "케토코나졸",
+          "MIX": "",
+          "ORI": "[M080618]케토코나졸",
+          "CLASS": "[06290]기타의 화학요법제/[06410]항원충제",
+          "MIXTURE_MIX_TYPE": "단일",
+          "MIXTURE_INGR_CODE": "D000419",
+          "MIXTURE_INGR_ENG_NAME": "Lovastatin",
+          "MIXTURE_INGR_KOR_NAME": "로바스타틴",
+          "MIXTURE_MIX": "",
+          "MIXTURE_ORI": "[M083392]로바스타틴",
+          "MIXTURE_CLASS": "[02180]동맥경화용제",
+          "NOTIFICATION_DATE": "20090303",
+          "PROHBT_CONTENT": "횡문근융해증을 비롯한 근육질환 등 중증 이상반응\n",
+          "REMARK": null,
+          "DEL_YN": "정상"
+        }
+      }
+    ]
+  }
+}

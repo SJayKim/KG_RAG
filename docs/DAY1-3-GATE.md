@@ -9,7 +9,7 @@
 
 | # | 게이트 | 상태 | 근거 |
 |---|---|---|---|
-| 1 | DUR 데이터셋 ID 확정 (`15056780` vs `15059486`) | 🟡 **거의 완료 (게이트웨이 전파 대기)** | 키 발급·저장 완료, **엔드포인트 정확히 확정**, 키 유효성 검증(401 vs 403). 승인이 트래픽 게이트웨이에 전파되면 10행 실측 자동 완료 |
+| 1 | DUR 데이터셋 ID 확정 (`15056780` vs `15059486`) | ✅ **PASS** | **`15056780`(성분) 채택.** 1,816 성분쌍(깨끗) vs 800,622 품목행(폭발). 전체 직접금기 엣지 + D-code 사전 확보, 크로스워크 18/18 D-code 매핑 |
 | 2 | openFDA 라벨 CYP3A4 문장 실재 | ✅ **PASS** | simvastatin·atorvastatin·lovastatin 기질 문장, 억제제·유도제 role 문장 전부 실측 |
 | 3 | 전이 골드 5개(라벨 근거까지) | ✅ **PASS** | `transitive_gold_v0.jsonl` — 5개 층화, 각 hop 실측 라벨 문장 앵커 |
 | 4 | 20–30 라벨 추출 미니평가 | 🟡 **부분 (설계 완료, 실측 대기)** | 추출 스키마·전략 확정, 하네스 스크립트 초안. 20–30 라벨 정량 P/R은 Week1 Day1–2 |
@@ -17,7 +17,7 @@
 | 6 | Kùzu 스냅샷 export 확정 | 🟡 **부분 (경로 확정, 구현 대기)** | export 포맷/파이프라인 결정. 실제 Neo4j→Kùzu 덤프는 Week1 |
 | 7 | 5케이스 agentic-벡터 go/no-go | ✅ **GO (단, thesis 정밀화)** | 아래 "핵심 발견" — 진짜 graph-win 케이스 존재 확인, 단 statin 라벨 co-naming 리스크 발견 |
 
-**종합 판정: 조건부 GO.** 자율 실행 가능한 5개 항목(2·3·5 완료, 4·6·7 실질 통과) 모두 통과. **유일한 하드 블로커는 Gate 1(DUR 키) — 사용자 발급 필요.** 이것만 해소되면 Week 1 진입 가능.
+**종합 판정: GO.** Gate 1·2·3·5 완료, 4·6·7 실질 통과. 하드 블로커 없음. **Week 1(얇은 end-to-end 슬라이스) 진입 가능.** (Gate 4 정량 P/R + Gate 6 실제 Kùzu 덤프만 Week 1 첫 작업으로 이월 — 데이터가 있어야 하는 항목.)
 
 ---
 
@@ -62,28 +62,26 @@ agentic 벡터는 "이 억제제가 이 기질에 해당하는가"를 매번 카
 
 ## Gate별 상세
 
-### Gate 1 — DUR 데이터셋 ID 🟡 거의 완료 (게이트웨이 전파 대기)
+### Gate 1 — DUR 데이터셋 ID ✅ PASS (`15056780` 성분정보 채택)
 
-- **키 발급·저장 완료:** 사용자가 `15056780`·`15059486` 둘 다 활용신청 → 키 발급. repo `.env`의 `DATA_GO_KR_KEY`에 저장(`.gitignore`가 `.env` 차단 확인).
-- **엔드포인트 정확히 확정** (openapi.do 페이지 HTML에서 실측 추출 — ⚠️ 서비스와 operation의 버전 접미사가 **다르다**, 이래서 순진한 `03/03`·`02/02` 조합이 다 실패):
+- **채택 결정: `15056780`(DUR 성분정보), operation `getUsjntTabooInfoList02`.** 실측 비교로 명확:
 
-  | 데이터셋 | 병용금기 엔드포인트 |
-  |---|---|
-  | 성분 `15056780` | `https://apis.data.go.kr/1471000/DURIrdntInfoService03/getUsjntTabooInfoList02` |
-  | 품목 `15059486` | `https://apis.data.go.kr/1471000/DURPrdlstInfoService03/getUsjntTabooInfoList03` |
+  | 데이터셋 | 병용금기 엔드포인트 | totalCount | 구조 |
+  |---|---|---|---|
+  | **성분 `15056780` ✅** | `apis.data.go.kr/1471000/DURIrdntInfoService03/getUsjntTabooInfoList02` | **1,816** | 깨끗한 성분코드↔성분코드 쌍 |
+  | 품목 `15059486` | `apis.data.go.kr/1471000/DURPrdlstInfoService03/getUsjntTabooInfoList03` | **800,622** | 제품 단위 — 성분쌍이 제품마다 폭발(10행→고유쌍 1개) |
 
-  (기타 성분 operation: `getSpcifyAgrdeTabooInfoList02`·`getPwnmTabooInfoList02`·`getCpctyAtentInfoList02`·`getMdctnPdAtentInfoList02`·`getOdsnAtentInfoList02`·`getEfcyDplctInfoList02`. 품목은 대응 `...03`.)
-- **키 유효성 검증됨 (핵심 진단):** 정답 경로에 대해
-  - **무효키 → HTTP 401 Unauthorized**
-  - **발급받은 키 → HTTP 403 Forbidden** (data.go.kr 표준 XML 오류 아닌 평문)
-
-  게이트웨이가 두 키를 **구분**한다 = 우리 키는 시스템에 **등록됨**. 403 = "인증됐으나 이 API 사용 권한 아직 없음" → **활용신청 승인이 트래픽 게이트웨이(`apis.data.go.kr`)에 전파되는 중.** data.go.kr 개발계정은 자동승인이나 게이트웨이 반영에 보통 **수분~1시간**(가끔 더).
-- **남은 것 = 전파 대기 후 자동 완료:** `scripts/gate/fetch_dur_contraindications.py`가 정답 경로로 완성됨. 200 OK 뜨는 순간 10행 저장 + 성분쌍/품목쌍 컬럼 비교 → **성분코드 쌍(Ingredient↔Ingredient)이 깨끗한 ID 채택**. 재실행:
-  ```bash
-  export $(grep DATA_GO_KR_KEY .env | xargs)
-  python scripts/gate/fetch_dur_contraindications.py 10 fixtures/dur-samples
-  ```
-- **참고:** openFDA(Gate 2)로 CYP 기전 축은 이미 검증됐으므로, DUR 축(직접 금기 1홉 legibility 래퍼)은 전파만 되면 저리스크.
+  성분 데이터가 그래프 스키마 `(Ingredient)-[:CONTRAINDICATED_WITH]->(Ingredient)`에 직결. 품목 데이터는 `(Drug)-[:HAS_INGREDIENT]->(Ingredient)` 매핑이 필요할 때만 보조 사용(dedup 필수).
+- **⚠️ 엔드포인트 함정 (규명):** 서비스와 operation의 버전 접미사가 **다르다** — 성분=`Service03`/`List02`, 품목=`Service03`/`List03`. 순진한 `03/03`·`02/02` 조합은 전부 404/500. openapi.do 페이지 HTML에서 실측 추출로 확정.
+  기타 성분 operation(전부 `...02`): `getSpcifyAgrdeTabooInfoList02`(특정연령대금기)·`getPwnmTabooInfoList02`(임부금기)·`getCpctyAtentInfoList02`(용량주의)·`getMdctnPdAtentInfoList02`(투여기간주의)·`getOdsnAtentInfoList02`(노인주의)·`getEfcyDplctInfoList02`(효능군중복).
+- **호출 제약:** `numOfRows` 상한 **500** → 페이지네이션 필수(1,816행 = 4페이지). 성공 시 `header.resultCode=="00"`. 키 발급 후 트래픽 게이트웨이 전파에 **~5분** 소요됨(무효키=401 / 미전파키=403 / 전파완료=200으로 상태 구분됨).
+- **확보한 산출물:**
+  - `fixtures/dur-samples/dur_contraindication_edges_full.json` — **전체 1,816 병용금기 엣지**(1,313 고유 성분쌍). 직접-DDI 레이어 = 추출 거의 0, 통째 확보.
+  - `fixtures/dur-samples/dur_ingredient_dcode_dict.json` — **472 DUR 성분 D-code 사전**(코드→한글·영문명).
+  - 크로스워크 **18/18 약물에 실제 DUR D-code 매핑 완료**(`ingredient_crosswalk_v0.csv`의 `dur_ingr_code` 컬럼).
+- **🔑 cross-ontology 발견:** DUR 성분코드는 **자체 D-code**(예: 심바스타틴=`D000027`)로 ATC/RxCUI가 아님 → resolver의 조인 키는 **D-code**다. 또 DUR은 **영국식 INN**을 쓴다(예: `Rifampicin` D000314, US "Rifampin" 아님) → 성분명 정규화 시 INN 철자 변이 처리 필요.
+- **검증 보너스:** 우리 골드셋 약물이 실 DUR 데이터에 전부 존재. 골드 G1(로바스타틴+이트라코나졸)이 실제 병용금기 목록 9번째 행, G2 hero 약물도 등장.
+- 재현: `export $(grep DATA_GO_KR_KEY .env | xargs) && python scripts/gate/fetch_dur_contraindications.py 10 fixtures/dur-samples`
 
 ### Gate 2 — openFDA CYP3A4 문장 실재 ✅ PASS
 
@@ -123,6 +121,7 @@ agentic 벡터는 "이 억제제가 이 기질에 해당하는가"를 매번 카
 
 - **산출물:** `fixtures/crosswalk/ingredient_crosswalk_v0.csv` — 18 성분(statin 치료군: 기질 3 + 비CYP3A4 대조 statin 2 + 강한 억제제 5 + 중등도 억제제 4 + 유도제 3 + 미다졸람 1).
 - **정직성:** `rxcui` 컬럼은 전부 `TBD-rxnav` — **빌드타임에 RxNav로 확인**(허구 RxCUI 금지). ATC는 WHO 표준값.
+- **`dur_ingr_code` 컬럼 = 실측 DUR D-code** (Gate 1에서 확보, 18/18 매핑). 이게 그래프의 실제 조인 키.
 - **비CYP3A4 statin(프라바·로수바) 포함** = 하드 네거티브/대조 앵커. 미다졸람 = 기질+기질 하드네거티브 앵커.
 
 ### Gate 6 — Kùzu 스냅샷 export 🟡 부분 (경로 확정)
@@ -141,9 +140,9 @@ agentic 벡터는 "이 억제제가 이 기질에 해당하는가"를 매번 카
 
 ## 다음 세션 진입 조건 (Week 1 시작 전)
 
-1. **Gate 1 마무리** — 키·엔드포인트 확정 완료. 게이트웨이 전파(403→200) 후 `fetch_dur_contraindications.py`로 10행 실측 → 성분쌍 깨끗한 ID 채택. (자동/재실행만 남음)
+1. ~~Gate 1~~ ✅ 완료 — `15056780` 채택, 전체 1,816 엣지 + 472 D-code 사전 + 크로스워크 18/18 D-code 매핑 확보.
 2. [코드] Week1 Day1–2 — Gate 4 정량화: 20–30 openFDA 라벨 LLM 추출 러너 + 손라벨 정답으로 P/R 측정.
-3. [코드] Week1 — `ingredient_crosswalk_v0.csv`의 RxCUI를 RxNav `approximateTerm`/ATC 브릿지로 빌드타임 해소 → coverage% 기록.
+3. [코드] Week1 — `ingredient_crosswalk_v0.csv`의 RxCUI를 RxNav `approximateTerm`/ATC 브릿지로 빌드타임 해소 → coverage% 기록. **조인 키 = DUR D-code**(ATC/RxCUI 아님), INN 철자 변이(Rifampicin 등) 처리.
 4. [설계 반영] DESIGN.md hero 예시(G2) 옆에 **G1(강한 graph-win)을 A/B 헤드라인으로** 승격 검토.
 
 ## 재현 방법
@@ -153,5 +152,11 @@ agentic 벡터는 "이 억제제가 이 기질에 해당하는가"를 매번 카
 python scripts/gate/fetch_openfda_cyp.py fixtures/openfda-samples/cyp3a4_sentences.json
 python scripts/gate/probe_substrate_perpetrators.py fixtures/openfda-samples/simvastatin_perpetrators.json
 python scripts/gate/probe_perpetrator_roles.py fixtures/openfda-samples/perpetrator_cyp3a4_roles.json
+
+# DUR 병용금기 재현 (키 필요 — repo .env의 DATA_GO_KR_KEY)
+export $(grep DATA_GO_KR_KEY .env | xargs)
+python scripts/gate/fetch_dur_contraindications.py 10 fixtures/dur-samples   # 성분 vs 품목 비교
+python scripts/gate/fetch_dur_all_edges.py fixtures/dur-samples              # 전체 1,816 엣지 + D-code 사전
+
 # Windows 콘솔이면 PYTHONUTF8=1 PYTHONIOENCODING=utf-8 앞에 붙일 것
 ```

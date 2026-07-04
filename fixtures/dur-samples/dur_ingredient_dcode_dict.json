@@ -1,0 +1,1890 @@
+{
+ "D000762": {
+  "kor": "이트라코나졸",
+  "eng": "Itraconazole"
+ },
+ "D000027": {
+  "kor": "심바스타틴",
+  "eng": "Simvastatin"
+ },
+ "D000592": {
+  "kor": "트리아졸람",
+  "eng": "Triazolam"
+ },
+ "D000353": {
+  "kor": "파록세틴",
+  "eng": "Paroxetine"
+ },
+ "D000139": {
+  "kor": "셀레길린염산염",
+  "eng": "Selegiline Hydrochloride"
+ },
+ "D000336": {
+  "kor": "설트랄린",
+  "eng": "Sertraline"
+ },
+ "D000660": {
+  "kor": "알프라졸람",
+  "eng": "Alprazolam"
+ },
+ "D000455": {
+  "kor": "아토르바스타틴",
+  "eng": "Atorvastatin"
+ },
+ "D000769": {
+  "kor": "케토코나졸",
+  "eng": "Ketoconazole"
+ },
+ "D000747": {
+  "kor": "에르고타민",
+  "eng": "Ergotamine"
+ },
+ "D000650": {
+  "kor": "수마트립탄",
+  "eng": "Sumatriptan"
+ },
+ "D000202": {
+  "kor": "디히드로에르고타민",
+  "eng": "Dihydroergotamine"
+ },
+ "D000628": {
+  "kor": "록시트로마이신",
+  "eng": "Roxithromycin"
+ },
+ "D000419": {
+  "kor": "로바스타틴",
+  "eng": "Lovastatin"
+ },
+ "D000019": {
+  "kor": "아시트레틴",
+  "eng": "Acitretin"
+ },
+ "D000716": {
+  "kor": "메토트렉세이트",
+  "eng": "Methotrexate"
+ },
+ "D000540": {
+  "kor": "부스피론",
+  "eng": "Buspirone"
+ },
+ "D000373": {
+  "kor": "클래리트로마이신",
+  "eng": "Clarithromycin"
+ },
+ "D000719": {
+  "kor": "미졸라스틴",
+  "eng": "Mizolastine"
+ },
+ "D000503": {
+  "kor": "독시사이클린",
+  "eng": "Doxycycline"
+ },
+ "D000758": {
+  "kor": "이소트레티노인",
+  "eng": "Isotretinoin"
+ },
+ "D000255": {
+  "kor": "알트레타민",
+  "eng": "Altretamine"
+ },
+ "D000413": {
+  "kor": "피리독신",
+  "eng": "Pyridoxine"
+ },
+ "D000256": {
+  "kor": "에리트로마이신",
+  "eng": "Erythromycin"
+ },
+ "D000127": {
+  "kor": "미노사이클린",
+  "eng": "Minocycline"
+ },
+ "D000064": {
+  "kor": "테트라사이클린",
+  "eng": "Tetracycline"
+ },
+ "D000754": {
+  "kor": "옥시테트라사이클린",
+  "eng": "Oxytetracycline"
+ },
+ "D000426": {
+  "kor": "메트로니다졸",
+  "eng": "Metronidazole"
+ },
+ "D000323": {
+  "kor": "미르타자핀",
+  "eng": "Mirtazapine"
+ },
+ "D000259": {
+  "kor": "아미오다론",
+  "eng": "Amiodarone"
+ },
+ "D000022": {
+  "kor": "소타롤",
+  "eng": "Sotalol"
+ },
+ "D000513": {
+  "kor": "펜타미딘",
+  "eng": "Pentamidin"
+ },
+ "D000452": {
+  "kor": "아스피린",
+  "eng": "Aspirin"
+ },
+ "D000213": {
+  "kor": "피모짓",
+  "eng": "Pimozide"
+ },
+ "D000770": {
+  "kor": "클로람페니콜",
+  "eng": "Chloramphenicol"
+ },
+ "D000678": {
+  "kor": "클린다마이신",
+  "eng": "Clindamycin"
+ },
+ "D000713": {
+  "kor": "린코마이신",
+  "eng": "Lincomycin"
+ },
+ "D000517": {
+  "kor": "플루코나졸",
+  "eng": "Fluconazole"
+ },
+ "D000113": {
+  "kor": "할로페리돌",
+  "eng": "Haloperidol"
+ },
+ "D000560": {
+  "kor": "에피네프린",
+  "eng": "Epinephrine"
+ },
+ "D000363": {
+  "kor": "이부프로펜",
+  "eng": "Ibuprofen"
+ },
+ "D000007": {
+  "kor": "미다졸람",
+  "eng": "Midazolam"
+ },
+ "D000429": {
+  "kor": "모클로베미드",
+  "eng": "Moclobemide"
+ },
+ "D000414": {
+  "kor": "히드로클로로티아지드",
+  "eng": "Hydrochlorothiazide"
+ },
+ "D000781": {
+  "kor": "페르페나진",
+  "eng": "Perphenazine"
+ },
+ "D000516": {
+  "kor": "플루옥세틴",
+  "eng": "Fluoxetine"
+ },
+ "D000060": {
+  "kor": "테녹시캄",
+  "eng": "Tenoxicam"
+ },
+ "D000249": {
+  "kor": "아세타졸아미드",
+  "eng": "Acetazolamide"
+ },
+ "D000065": {
+  "kor": "토피라메이트",
+  "eng": "Topiramate"
+ },
+ "D000274": {
+  "kor": "케토롤락",
+  "eng": "Ketorolac"
+ },
+ "D000739": {
+  "kor": "아세클로페낙",
+  "eng": "Aceclofenac"
+ },
+ "D000138": {
+  "kor": "세레콕시브",
+  "eng": "Celecoxib"
+ },
+ "D000086": {
+  "kor": "덱시부프로펜",
+  "eng": "Dexibuprofen"
+ },
+ "D000463": {
+  "kor": "에토돌락",
+  "eng": "Etodolac"
+ },
+ "D000506": {
+  "kor": "디클로페낙",
+  "eng": "Diclofenac"
+ },
+ "D000071": {
+  "kor": "페노프로펜",
+  "eng": "Fenoprofen"
+ },
+ "D000705": {
+  "kor": "플루르비프로펜",
+  "eng": "Flurbiprofen"
+ },
+ "D000230": {
+  "kor": "메페남산",
+  "eng": "Mefenamic acid"
+ },
+ "D000427": {
+  "kor": "멜록시캄",
+  "eng": "Meloxicam"
+ },
+ "D000081": {
+  "kor": "나부메톤",
+  "eng": "Nabumetone"
+ },
+ "D000448": {
+  "kor": "슈도에페드린",
+  "eng": "Pseudoephedrine"
+ },
+ "D000362": {
+  "kor": "이미프라민",
+  "eng": "Imipramine"
+ },
+ "D000466": {
+  "kor": "노르트립틸린",
+  "eng": "Nortriptyline"
+ },
+ "D000763": {
+  "kor": "인디나빌",
+  "eng": "Indinavir"
+ },
+ "D000626": {
+  "kor": "로피나비르",
+  "eng": "Lopinavir"
+ },
+ "D000003": {
+  "kor": "넬피나비어",
+  "eng": "Nelfinavir"
+ },
+ "D000712": {
+  "kor": "리토나비르",
+  "eng": "Ritonavir"
+ },
+ "D000031": {
+  "kor": "아세메타신",
+  "eng": "Acemetacin"
+ },
+ "D000298": {
+  "kor": "디플루니살",
+  "eng": "Diflunisal"
+ },
+ "D000017": {
+  "kor": "부프레노르핀",
+  "eng": "Buprenorpine"
+ },
+ "D000006": {
+  "kor": "모르핀",
+  "eng": "Morphine"
+ },
+ "D000575": {
+  "kor": "인도메타신",
+  "eng": "Indometacin"
+ },
+ "D000672": {
+  "kor": "케토프로펜",
+  "eng": "Ketoprofen"
+ },
+ "D000142": {
+  "kor": "시프로플록사신",
+  "eng": "Ciprofloxacin"
+ },
+ "D000702": {
+  "kor": "펜톡시필린",
+  "eng": "Pentoxifylline"
+ },
+ "D000211": {
+  "kor": "프로글루메타신",
+  "eng": "Proglumetacin"
+ },
+ "D000277": {
+  "kor": "클로미프라민",
+  "eng": "Clomipramine"
+ },
+ "D000059": {
+  "kor": "탄산리튬",
+  "eng": "Lithium Carbonate"
+ },
+ "D000248": {
+  "kor": "아목사핀",
+  "eng": "Amoxapine"
+ },
+ "D000657": {
+  "kor": "아프라클로니딘",
+  "eng": "Apraclonidine"
+ },
+ "D000150": {
+  "kor": "아타자나비르",
+  "eng": "Atazanavir"
+ },
+ "D000228": {
+  "kor": "메틸에르고메트린",
+  "eng": "Methylergometrine"
+ },
+ "D000641": {
+  "kor": "브리모니딘",
+  "eng": "Brimonidine"
+ },
+ "D000476": {
+  "kor": "카르바마제핀",
+  "eng": "Carbamazepine"
+ },
+ "D000443": {
+  "kor": "보리코나졸",
+  "eng": "Voriconazole"
+ },
+ "D000332": {
+  "kor": "시탈로프람",
+  "eng": "Citalopram"
+ },
+ "D000558": {
+  "kor": "에파비렌즈",
+  "eng": "Efavirenz"
+ },
+ "D000171": {
+  "kor": "졸미트립탄",
+  "eng": "Zolmitriptan"
+ },
+ "D000501": {
+  "kor": "독세핀",
+  "eng": "Doxepin"
+ },
+ "D000800": {
+  "kor": "플루복사민",
+  "eng": "Fluvoxamine"
+ },
+ "D000187": {
+  "kor": "티자니딘",
+  "eng": "Tizanidine"
+ },
+ "D000314": {
+  "kor": "리팜피신",
+  "eng": "Rifampicin"
+ },
+ "D000760": {
+  "kor": "이오비트리돌",
+  "eng": "Iobitridol"
+ },
+ "D000718": {
+  "kor": "메트포르민",
+  "eng": "Metformin"
+ },
+ "D000669": {
+  "kor": "이오헥솔",
+  "eng": "Iohexol"
+ },
+ "D000364": {
+  "kor": "이오메프롤",
+  "eng": "Iomeprol"
+ },
+ "D000761": {
+  "kor": "이오프로마이드",
+  "eng": "Iopromide"
+ },
+ "D000572": {
+  "kor": "이소소르비드",
+  "eng": "Isosorbide"
+ },
+ "D000246": {
+  "kor": "실데나필",
+  "eng": "Sildenafil"
+ },
+ "D000229": {
+  "kor": "메틸페니데이트",
+  "eng": "Methylphenidate"
+ },
+ "D000700": {
+  "kor": "페티딘",
+  "eng": "Pethidine"
+ },
+ "D000638": {
+  "kor": "벤라팍신",
+  "eng": "Venlafaxine"
+ },
+ "D000530": {
+  "kor": "몰시도민",
+  "eng": "Molsidomine"
+ },
+ "D000287": {
+  "kor": "나라트립탄",
+  "eng": "Naratriptan"
+ },
+ "D000498": {
+  "kor": "니코란딜",
+  "eng": "Nicorandil"
+ },
+ "D000675": {
+  "kor": "클로닉신",
+  "eng": "Clonixin"
+ },
+ "D000115": {
+  "kor": "로녹시캄",
+  "eng": "Lornoxicam"
+ },
+ "D000083": {
+  "kor": "니메술리드",
+  "eng": "Nimesulide"
+ },
+ "D000262": {
+  "kor": "옥사프로진",
+  "eng": "Oxaprozin"
+ },
+ "D000309": {
+  "kor": "피록시캄",
+  "eng": "Piroxicam"
+ },
+ "D000544": {
+  "kor": "살살레이트",
+  "eng": "Salsalate"
+ },
+ "D000644": {
+  "kor": "설린닥",
+  "eng": "Sulindac"
+ },
+ "D000343": {
+  "kor": "아만타딘",
+  "eng": "Amantadine"
+ },
+ "D000238": {
+  "kor": "브롬페리돌",
+  "eng": "Bromperidol"
+ },
+ "D000584": {
+  "kor": "클로르프로마진",
+  "eng": "Chlorpromazine"
+ },
+ "D000144": {
+  "kor": "아나스트로졸",
+  "eng": "Anastrozole"
+ },
+ "D000664": {
+  "kor": "에스트로겐",
+  "eng": "Estrogens"
+ },
+ "D000679": {
+  "kor": "타목시펜",
+  "eng": "Tamoxifen"
+ },
+ "D000541": {
+  "kor": "브로모크립틴",
+  "eng": "Bromocriptine"
+ },
+ "D000276": {
+  "kor": "클로르프로틱센",
+  "eng": "Chlorprothixene"
+ },
+ "D000477": {
+  "kor": "클렌부테롤",
+  "eng": "Clenbuterol"
+ },
+ "D000334": {
+  "kor": "사이클로스포린",
+  "eng": "Cyclosporine"
+ },
+ "D000279": {
+  "kor": "타크로리무스",
+  "eng": "Tacrolimus"
+ },
+ "D000155": {
+  "kor": "에페드린",
+  "eng": "Ephedrine"
+ },
+ "D000070": {
+  "kor": "페노테롤",
+  "eng": "Fenoterol"
+ },
+ "D000212": {
+  "kor": "플레카이니드아세테이트",
+  "eng": "Flecainide Acetate"
+ },
+ "D000267": {
+  "kor": "이오파미돌",
+  "eng": "Iopamidol"
+ },
+ "D000165": {
+  "kor": "이오베르솔",
+  "eng": "Ioversol"
+ },
+ "D000268": {
+  "kor": "이옥사글린산",
+  "eng": "Ioxaglic Acid"
+ },
+ "D000759": {
+  "kor": "이소프로테레놀",
+  "eng": "Isoproterenol"
+ },
+ "D000488": {
+  "kor": "트레티노인",
+  "eng": "Tretinoin"
+ },
+ "D000265": {
+  "kor": "이소니아지드",
+  "eng": "Isoniazid"
+ },
+ "D000696": {
+  "kor": "덱스케토프로펜",
+  "eng": "Dexketoprofen"
+ },
+ "D000525": {
+  "kor": "록소프로펜",
+  "eng": "Loxoprofen"
+ },
+ "D000703": {
+  "kor": "프라노프로펜",
+  "eng": "Pranoprofen"
+ },
+ "D000766": {
+  "kor": "잘토프로펜",
+  "eng": "Zaltoprofen"
+ },
+ "D000320": {
+  "kor": "멜팔란",
+  "eng": "Melphalan"
+ },
+ "D000783": {
+  "kor": "날리딕스산",
+  "eng": "Nalidixic Acid"
+ },
+ "D000120": {
+  "kor": "메나테트레논",
+  "eng": "Menatetrenone"
+ },
+ "D000567": {
+  "kor": "와파린",
+  "eng": "Warfarin"
+ },
+ "D000200": {
+  "kor": "덱스트로메토르판",
+  "eng": "Dextromethorphan"
+ },
+ "D000773": {
+  "kor": "트라마돌",
+  "eng": "Tramadol"
+ },
+ "D000196": {
+  "kor": "니솔디핀",
+  "eng": "Nisoldipine"
+ },
+ "D000755": {
+  "kor": "옥트레오티드",
+  "eng": "Octreotide"
+ },
+ "D000261": {
+  "kor": "옥사토마이드",
+  "eng": "Oxatomide"
+ },
+ "D000656": {
+  "kor": "아트로핀",
+  "eng": "Atropine"
+ },
+ "D000030": {
+  "kor": "아미설프리드",
+  "eng": "Amisulpride"
+ },
+ "D000514": {
+  "kor": "프로카테롤",
+  "eng": "Procaterol"
+ },
+ "D000164": {
+  "kor": "이스라디핀",
+  "eng": "Isradipine"
+ },
+ "D000197": {
+  "kor": "니페디핀",
+  "eng": "Nifedipine"
+ },
+ "D000018": {
+  "kor": "부프로피온염산염",
+  "eng": "Bupropion Hydrochloride"
+ },
+ "D000242": {
+  "kor": "시클로벤자프린",
+  "eng": "Cyclobenzaprine"
+ },
+ "D000215": {
+  "kor": "니트로글리세린",
+  "eng": "Nitroglycerin"
+ },
+ "D000787": {
+  "kor": "니트로푸루시드",
+  "eng": "Nitroprusside"
+ },
+ "D000159": {
+  "kor": "아미로라이드",
+  "eng": "Amiloride"
+ },
+ "D000731": {
+  "kor": "스피로노락톤",
+  "eng": "Spironolactone"
+ },
+ "D000181": {
+  "kor": "타다라필",
+  "eng": "Tadalafil"
+ },
+ "D000521": {
+  "kor": "테르부탈린황산염",
+  "eng": "Terbutaline Sulfate"
+ },
+ "D000778": {
+  "kor": "티오틱센",
+  "eng": "Thiothixene"
+ },
+ "D000753": {
+  "kor": "트리플루오페라진",
+  "eng": "Trifluoperazine"
+ },
+ "D000569": {
+  "kor": "유데나필",
+  "eng": "Udenafil"
+ },
+ "D000434": {
+  "kor": "바데나필",
+  "eng": "Vardenafil"
+ },
+ "D000745": {
+  "kor": "알모트립탄",
+  "eng": "Almotriptan"
+ },
+ "D000690": {
+  "kor": "글리벤클라미드",
+  "eng": "Glibenclamide"
+ },
+ "D000015": {
+  "kor": "보센탄",
+  "eng": "Bosentan"
+ },
+ "D000418": {
+  "kor": "레파글리니드",
+  "eng": "Repaglinide"
+ },
+ "D000076": {
+  "kor": "겜피브로질",
+  "eng": "Gemfibrozil"
+ },
+ "D000469": {
+  "kor": "오메프라졸",
+  "eng": "Omeprazole"
+ },
+ "D000395": {
+  "kor": "다루나비르",
+  "eng": "Darunavir"
+ },
+ "D000082": {
+  "kor": "노르에피네프린",
+  "eng": "Norepinephrine"
+ },
+ "D000137": {
+  "kor": "살부타몰",
+  "eng": "Salbutamol"
+ },
+ "D000035": {
+  "kor": "에스시탈로프람",
+  "eng": "Escitalopram"
+ },
+ "D000141": {
+  "kor": "시부트라민",
+  "eng": "Sibutramine"
+ },
+ "D000795": {
+  "kor": "펜터민",
+  "eng": "Phentermine"
+ },
+ "D000701": {
+  "kor": "펜디메트라진타르타르산염",
+  "eng": "Phendimetrazine tartrate"
+ },
+ "D000505": {
+  "kor": "디에틸프로피온",
+  "eng": "Diethylpropion"
+ },
+ "D000714": {
+  "kor": "마진돌",
+  "eng": "Mazindol"
+ },
+ "D000128": {
+  "kor": "미로데나필",
+  "eng": "Mirodenafil"
+ },
+ "D000552": {
+  "kor": "아토목세틴",
+  "eng": "Atomoxetine"
+ },
+ "D000792": {
+  "kor": "레보메프로마진",
+  "eng": "Levomepromazine"
+ },
+ "D000811": {
+  "kor": "퀴누프라민",
+  "eng": "Quinupramine"
+ },
+ "D000178": {
+  "kor": "쿠아제팜",
+  "eng": "Quazepam "
+ },
+ "D000377": {
+  "kor": "클로르탈리돈",
+  "eng": "Chlorthalidone"
+ },
+ "D000405": {
+  "kor": "포사코나졸",
+  "eng": "Posaconazole"
+ },
+ "D000742": {
+  "kor": "아지트로마이신",
+  "eng": "Azithromycin"
+ },
+ "D000699": {
+  "kor": "란소프라졸",
+  "eng": "Lansoprazole"
+ },
+ "D000153": {
+  "kor": "에스오메프라졸",
+  "eng": "Esomeprazole"
+ },
+ "D000204": {
+  "kor": "라베프라졸",
+  "eng": "Rabeprazole"
+ },
+ "D000301": {
+  "kor": "레바프라잔",
+  "eng": "Revaprazan"
+ },
+ "D000386": {
+  "kor": "판토프라졸",
+  "eng": "Pantoprazole"
+ },
+ "D000168": {
+  "kor": "일라프라졸",
+  "eng": "Ilaprazole"
+ },
+ "D000084": {
+  "kor": "다폭세틴",
+  "eng": "Dapoxetine"
+ },
+ "D000125": {
+  "kor": "메톡시페나민",
+  "eng": "Methoxyphenamine"
+ },
+ "D000185": {
+  "kor": "툴로부테롤",
+  "eng": "Tulobuterol"
+ },
+ "D000029": {
+  "kor": "아미노카프론산",
+  "eng": "Aminocaproic Acid"
+ },
+ "D000777": {
+  "kor": "트롬빈",
+  "eng": "Thrombin"
+ },
+ "D000590": {
+  "kor": "트라넥삼산",
+  "eng": "Tranexamic Acid"
+ },
+ "D000520": {
+  "kor": "헤모코아귤라제",
+  "eng": "Hemocoagulase"
+ },
+ "D000600": {
+  "kor": "글리클라지드",
+  "eng": "Gliclazide"
+ },
+ "D000324": {
+  "kor": "미코나졸",
+  "eng": "Miconazole"
+ },
+ "D000604": {
+  "kor": "네틸마이신",
+  "eng": "Netilmicin"
+ },
+ "D000798": {
+  "kor": "푸로세미드",
+  "eng": "Furosemide"
+ },
+ "D000075": {
+  "kor": "겐타마이신",
+  "eng": "Gentamicin"
+ },
+ "D000322": {
+  "kor": "미데카마이신",
+  "eng": "Midecamycin"
+ },
+ "D000338": {
+  "kor": "스피라마이신",
+  "eng": "Spiramycin"
+ },
+ "D000158": {
+  "kor": "메타사이클린",
+  "eng": "Methacycline"
+ },
+ "D000020": {
+  "kor": "블로난세린",
+  "eng": "Blonanserin"
+ },
+ "D000151": {
+  "kor": "알파칼시돌",
+  "eng": "Alfacalcidol"
+ },
+ "D000581": {
+  "kor": "칼시트리올",
+  "eng": "Calcitriol"
+ },
+ "D000175": {
+  "kor": "칼시페디올",
+  "eng": "Calcifediol"
+ },
+ "D000188": {
+  "kor": "파리칼시톨",
+  "eng": "Paricalcitol"
+ },
+ "D000565": {
+  "kor": "염화칼륨",
+  "eng": "Potassium Chloride"
+ },
+ "D000028": {
+  "kor": "아데포비어디피복실",
+  "eng": "Adefovir dipivoxil"
+ },
+ "D000281": {
+  "kor": "테노포비르",
+  "eng": "Tenofovir"
+ },
+ "D000161": {
+  "kor": "이리노테칸",
+  "eng": "Irinotecan"
+ },
+ "D000407": {
+  "kor": "프로바트립탄",
+  "eng": "Frovatriptan"
+ },
+ "D000806": {
+  "kor": "트로메타몰",
+  "eng": "Trometamol"
+ },
+ "D000620": {
+  "kor": "프라미펙솔",
+  "eng": "Pramipexole"
+ },
+ "D000045": {
+  "kor": "요오드화옥사피움",
+  "eng": "Oxapium Iodide"
+ },
+ "D000568": {
+  "kor": "요오드화나트륨(131I)",
+  "eng": "Sodium Iodide(131I)"
+ },
+ "D000251": {
+  "kor": "아티카인",
+  "eng": "Articaine"
+ },
+ "D000201": {
+  "kor": "드로네다론",
+  "eng": "Dronedarone"
+ },
+ "D000173": {
+  "kor": "지프라시돈",
+  "eng": "Ziprasidone"
+ },
+ "D000091": {
+  "kor": "디피리다몰",
+  "eng": "Dipyridamole"
+ },
+ "D000350": {
+  "kor": "에제티미브",
+  "eng": "Ezetimibe"
+ },
+ "D000004": {
+  "kor": "메톨라존",
+  "eng": "Metolazone"
+ },
+ "D000809": {
+  "kor": "아미트리프틸린",
+  "eng": "Amitriptyline"
+ },
+ "D000319": {
+  "kor": "돌라세트론",
+  "eng": "Dolasetron"
+ },
+ "D000665": {
+  "kor": "엠트리시타빈",
+  "eng": "Emtricitabine"
+ },
+ "D000032": {
+  "kor": "아이오다이즈드오일",
+  "eng": "Iodised Oil"
+ },
+ "D000737": {
+  "kor": "아바나필",
+  "eng": "Avanafil"
+ },
+ "D000673": {
+  "kor": "코비시스타트",
+  "eng": "Cobicistat"
+ },
+ "D000497": {
+  "kor": "니카르디핀",
+  "eng": "Nicardipine"
+ },
+ "D000733": {
+  "kor": "시프로테론",
+  "eng": "Cyproterone"
+ },
+ "D000556": {
+  "kor": "에토노게스트렐",
+  "eng": "Etonogestrel"
+ },
+ "D000617": {
+  "kor": "레보노르게스트렐",
+  "eng": "Levonorgestrel"
+ },
+ "D000694": {
+  "kor": "데소게스트렐",
+  "eng": "Desogestrel"
+ },
+ "D000789": {
+  "kor": "드로스피레논",
+  "eng": "Drospirenone"
+ },
+ "D000389": {
+  "kor": "게스토덴",
+  "eng": "Gestodene"
+ },
+ "D000121": {
+  "kor": "메드록시프로게스테론",
+  "eng": "Medroxyprogesterone"
+ },
+ "D000695": {
+  "kor": "덱스란소프라졸",
+  "eng": "Dexlansoprazole"
+ },
+ "D000357": {
+  "kor": "올란자핀",
+  "eng": "Olanzapine"
+ },
+ "D000735": {
+  "kor": "아고멜라틴",
+  "eng": "Agomelatine"
+ },
+ "D000396": {
+  "kor": "다비가트란에텍실레이트",
+  "eng": "Dabigatran etexilate"
+ },
+ "D000087": {
+  "kor": "도리페넴",
+  "eng": "Doripenem"
+ },
+ "D000535": {
+  "kor": "발프로산",
+  "eng": "Valproic acid"
+ },
+ "D000036": {
+  "kor": "에트라비린",
+  "eng": "Etravirine"
+ },
+ "D000282": {
+  "kor": "페노바르비탈",
+  "eng": "Phenobarbital"
+ },
+ "D000595": {
+  "kor": "페니토인",
+  "eng": "Phenytoin"
+ },
+ "D000447": {
+  "kor": "세인트존스워트",
+  "eng": "St. Johns Wort"
+ },
+ "D000402": {
+  "kor": "페북소스타트",
+  "eng": "Febuxostat"
+ },
+ "D000123": {
+  "kor": "메르캅토푸린",
+  "eng": "Mercaptopurine"
+ },
+ "D000250": {
+  "kor": "아자티오프린",
+  "eng": "Azathioprine"
+ },
+ "D000208": {
+  "kor": "포스아프레피탄트 디메글루민염",
+  "eng": "Fosaprepitant Dimeglumine"
+ },
+ "D000472": {
+  "kor": "이그라티모드",
+  "eng": "Iguratimod"
+ },
+ "D000571": {
+  "kor": "이바브라딘",
+  "eng": "Ivabradine"
+ },
+ "D000698": {
+  "kor": "라사길린",
+  "eng": "Rasagiline"
+ },
+ "D000225": {
+  "kor": "릴피비린",
+  "eng": "Rilpivirine"
+ },
+ "D000263": {
+  "kor": "옥스카르바제핀",
+  "eng": "Oxcarbazepine"
+ },
+ "D000209": {
+  "kor": "포스페니토인",
+  "eng": "Fosphenytoin"
+ },
+ "D000751": {
+  "kor": "에스판토프라졸",
+  "eng": "S-Pantoprazole"
+ },
+ "D000527": {
+  "kor": "리바록사반",
+  "eng": "Rivaroxaban"
+ },
+ "D000342": {
+  "kor": "실로도신",
+  "eng": "Silodosin"
+ },
+ "D000385": {
+  "kor": "티카그렐러",
+  "eng": "Ticagrelor"
+ },
+ "D000487": {
+  "kor": "톨밥탄",
+  "eng": "Tolvaptan"
+ },
+ "D000297": {
+  "kor": "돔페리돈",
+  "eng": "Domperidone"
+ },
+ "D000143": {
+  "kor": "아나그렐리드",
+  "eng": "Anagrelide"
+ },
+ "D000643": {
+  "kor": "삼산화비소",
+  "eng": "Arsenic trioxide"
+ },
+ "D000328": {
+  "kor": "베다퀼린",
+  "eng": "Bedaquiline"
+ },
+ "D000724": {
+  "kor": "비칼루타미드",
+  "eng": "Bicalutamide"
+ },
+ "D000444": {
+  "kor": "보세프레비르",
+  "eng": "Boceprevir"
+ },
+ "D000693": {
+  "kor": "데가렐릭스",
+  "eng": "Degarelix"
+ },
+ "D000348": {
+  "kor": "에바스틴",
+  "eng": "Ebastine"
+ },
+ "D000519": {
+  "kor": "핀골리모드",
+  "eng": "Fingolimod"
+ },
+ "D000078": {
+  "kor": "그라니세트론",
+  "eng": "Granisetron"
+ },
+ "D000793": {
+  "kor": "레보플록사신",
+  "eng": "Levofloxacin"
+ },
+ "D000226": {
+  "kor": "메퀴타진",
+  "eng": "Mequitazine"
+ },
+ "D000425": {
+  "kor": "메토클로프라미드",
+  "eng": "Metoclopramide"
+ },
+ "D000430": {
+  "kor": "목시플록사신",
+  "eng": "Moxifloxacin"
+ },
+ "D000608": {
+  "kor": "닐로티닙",
+  "eng": "Nilotinib"
+ },
+ "D000470": {
+  "kor": "온단세트론",
+  "eng": "Ondansetron"
+ },
+ "D000111": {
+  "kor": "필시카이니드",
+  "eng": "Pilsicainide"
+ },
+ "D000102": {
+  "kor": "프루칼로프라이드",
+  "eng": "Prucalopride"
+ },
+ "D000299": {
+  "kor": "라도티닙",
+  "eng": "Radotinib"
+ },
+ "D000422": {
+  "kor": "리스페리돈",
+  "eng": "Risperidone"
+ },
+ "D000833": {
+  "kor": "텔리트로마이신",
+  "eng": "Telithromycin"
+ },
+ "D000842": {
+  "kor": "토레미펜",
+  "eng": "Toremifene"
+ },
+ "D000774": {
+  "kor": "트라조돈염산염",
+  "eng": "Trazodone Hydrochloride"
+ },
+ "D000635": {
+  "kor": "반데타닙",
+  "eng": "Vandetanib"
+ },
+ "D000615": {
+  "kor": "라미부딘",
+  "eng": "Lamivudine"
+ },
+ "D000564": {
+  "kor": "키실로메타졸린",
+  "eng": "Xylometazoline"
+ },
+ "D000823": {
+  "kor": "퀴니딘",
+  "eng": "Quinidine"
+ },
+ "D000563": {
+  "kor": "벤세라지드",
+  "eng": "Benserazide"
+ },
+ "D000824": {
+  "kor": "할로탄",
+  "eng": "Halothane"
+ },
+ "D000825": {
+  "kor": "조사마이신",
+  "eng": "Josamycin"
+ },
+ "D000827": {
+  "kor": "오라노핀",
+  "eng": "Auranofin"
+ },
+ "D000417": {
+  "kor": "히드록시클로로퀸",
+  "eng": "Hydroxychloroquine"
+ },
+ "D000829": {
+  "kor": "트리암테렌",
+  "eng": "Triamterene"
+ },
+ "D000830": {
+  "kor": "스파플록사신",
+  "eng": "Sparfloxacin"
+ },
+ "D000810": {
+  "kor": "도티에핀",
+  "eng": "Dothiepin"
+ },
+ "D000831": {
+  "kor": "이오딕사놀",
+  "eng": "Iodixanol"
+ },
+ "D000832": {
+  "kor": "이오트로란",
+  "eng": "Iotrolan"
+ },
+ "D000834": {
+  "kor": "에토페나메이트",
+  "eng": "Etofenamate"
+ },
+ "D000835": {
+  "kor": "플루페남산",
+  "eng": "Flufenamic acid"
+ },
+ "D000836": {
+  "kor": "메크로페남산",
+  "eng": "Meclofenamate"
+ },
+ "D000837": {
+  "kor": "티아프로펜산",
+  "eng": "Tiaprofenic acid"
+ },
+ "D000199": {
+  "kor": "덱사메타손",
+  "eng": "Dexamethasone"
+ },
+ "D000838": {
+  "kor": "포르모테롤",
+  "eng": "Formoterol"
+ },
+ "D000841": {
+  "kor": "헥소프레날린",
+  "eng": "Hexoprenaline"
+ },
+ "D000522": {
+  "kor": "히드로코르티손",
+  "eng": "Hydrocortisone"
+ },
+ "D000839": {
+  "kor": "잘시타빈",
+  "eng": "Zalcitabine"
+ },
+ "D000406": {
+  "kor": "프레드니솔론",
+  "eng": "Prednisolone"
+ },
+ "D000840": {
+  "kor": "주클로펜틱솔",
+  "eng": "Zuclopenthixol"
+ },
+ "D000005": {
+  "kor": "메틸프레드니솔론",
+  "eng": "Methylprednisolone"
+ },
+ "D000843": {
+  "kor": "메타졸아마이드",
+  "eng": "Methazolamide"
+ },
+ "D000845": {
+  "kor": "암리논",
+  "eng": "Amrinone"
+ },
+ "D000697": {
+  "kor": "도부타민",
+  "eng": "Dobutamine"
+ },
+ "D000846": {
+  "kor": "베프리딜",
+  "eng": "Bepridil"
+ },
+ "D000970": {
+  "kor": "아토목세틴",
+  "eng": "Atomoxetine"
+ },
+ "D000491": {
+  "kor": "팔리페리돈",
+  "eng": "Paliperidone"
+ },
+ "D000079": {
+  "kor": "글리피지드",
+  "eng": "Glipizide"
+ },
+ "D000978": {
+  "kor": "시트르산칼륨",
+  "eng": "Potassium citrate"
+ },
+ "D000982": {
+  "kor": "나프록센",
+  "eng": "Naproxen"
+ },
+ "D000757": {
+  "kor": "이미페넴",
+  "eng": "Imipenem"
+ },
+ "D000122": {
+  "kor": "메로페넴",
+  "eng": "Meropenem"
+ },
+ "D000779": {
+  "kor": "파니페넴",
+  "eng": "Panipenem"
+ },
+ "D000088": {
+  "kor": "독사조신",
+  "eng": "Doxazosin"
+ },
+ "D000515": {
+  "kor": "프로파페논",
+  "eng": "Propafenone"
+ },
+ "D000583": {
+  "kor": "쿠에티아핀",
+  "eng": "Quetiapine"
+ },
+ "D000681": {
+  "kor": "테라조신",
+  "eng": "Terazosin"
+ },
+ "D000986": {
+  "kor": "돌루테그라비르",
+  "eng": "Dolutegravir"
+ },
+ "D000329": {
+  "kor": "베라파밀",
+  "eng": "Verapamil"
+ },
+ "D000818": {
+  "kor": "딜티아젬",
+  "eng": "Diltiazem"
+ },
+ "D000890": {
+  "kor": "둘록세틴",
+  "eng": "Duloxetine"
+ },
+ "D001016": {
+  "kor": "타펜타돌",
+  "eng": "Tapentadol"
+ },
+ "D001012": {
+  "kor": "에토리콕시브",
+  "eng": "Etoricoxib"
+ },
+ "D001011": {
+  "kor": "보티옥세틴",
+  "eng": "Vortioxetine"
+ },
+ "D001010": {
+  "kor": "데스벤라팍신 ",
+  "eng": "Desvenlafaxine"
+ },
+ "D001030": {
+  "kor": "알푸조신",
+  "eng": "Alfuzosin"
+ },
+ "D001031": {
+  "kor": "나프토피딜",
+  "eng": "Naftopidil"
+ },
+ "D001032": {
+  "kor": "탐스로신",
+  "eng": "Tamsulosin"
+ },
+ "D001073": {
+  "kor": "리오시구앗",
+  "eng": "Riociguat"
+ },
+ "D000619": {
+  "kor": "푸시딘산",
+  "eng": "Fusidic Acid"
+ },
+ "D000654": {
+  "kor": "아바카비르",
+  "eng": "Abacavir"
+ },
+ "D001074": {
+  "kor": "네비라핀",
+  "eng": "Nevirapine"
+ },
+ "D001075": {
+  "kor": "아수나프레비르",
+  "eng": "Asunaprevir"
+ },
+ "D001076": {
+  "kor": "세리티닙",
+  "eng": "Ceritinib"
+ },
+ "D000674": {
+  "kor": "크리조티닙",
+  "eng": "Crizotinib"
+ },
+ "D001077": {
+  "kor": "사이클로스포린",
+  "eng": "Cyclosporine"
+ },
+ "D001078": {
+  "kor": "다브라페닙",
+  "eng": "Dabrafenib"
+ },
+ "D001079": {
+  "kor": "엔잘루타마이드",
+  "eng": "Enzalutamide"
+ },
+ "D000162": {
+  "kor": "이매티닙",
+  "eng": "Imatinib"
+ },
+ "D000953": {
+  "kor": "미토테인",
+  "eng": "Mitotane"
+ },
+ "D000632": {
+  "kor": "모다피닐",
+  "eng": "Modafinil"
+ },
+ "D001080": {
+  "kor": "나프실린",
+  "eng": "Nafcillin"
+ },
+ "D000103": {
+  "kor": "프리미돈",
+  "eng": "Primidone"
+ },
+ "D001081": {
+  "kor": "리파부틴",
+  "eng": "Rifabutin"
+ },
+ "D001082": {
+  "kor": "시롤리무스",
+  "eng": "Sirolimus"
+ },
+ "D001070": {
+  "kor": "다클라타스비르",
+  "eng": "Daclatasvir"
+ },
+ "D001071": {
+  "kor": "소포스부비르",
+  "eng": "Sofosbuvir"
+ },
+ "D001072": {
+  "kor": "레디파스비르",
+  "eng": "Ledipasvir"
+ },
+ "D000219": {
+  "kor": "로수바스타틴",
+  "eng": "Rosuvastatin"
+ },
+ "D000582": {
+  "kor": "콜키신",
+  "eng": "Colchicine"
+ },
+ "D000114": {
+  "kor": "히드록시진",
+  "eng": "Hydroxyzine"
+ },
+ "D000467": {
+  "kor": "메플로퀸",
+  "eng": "Mefloquine"
+ },
+ "D001091": {
+  "kor": "옥시메타졸린",
+  "eng": "Oxymetazoline"
+ },
+ "D001035": {
+  "kor": "리네졸리드",
+  "eng": "Linezolid"
+ },
+ "D001149": {
+  "kor": "팔보시클립",
+  "eng": "palbociclib"
+ },
+ "D001171": {
+  "kor": "엘바스비르",
+  "eng": "Elbasvir"
+ },
+ "D001172": {
+  "kor": "그라조프레비르",
+  "eng": "Grazoprevir"
+ },
+ "D000749": {
+  "kor": "에티닐에스트라디올",
+  "eng": "Ethinyl estradiol"
+ },
+ "D001174": {
+  "kor": "옴비타스비르",
+  "eng": "Ombitasvir"
+ },
+ "D001176": {
+  "kor": "아산화질소",
+  "eng": "nitrous oxide"
+ },
+ "D001177": {
+  "kor": "다사부비르",
+  "eng": "Dasabuvir"
+ },
+ "D001178": {
+  "kor": "셀렉시팍",
+  "eng": "selexipag"
+ },
+ "D001063": {
+  "kor": "로카세린",
+  "eng": "Lorcaserin"
+ },
+ "D000302": {
+  "kor": "레보도파",
+  "eng": "Levodopa"
+ },
+ "D001314": {
+  "kor": "라듐-223염화물",
+  "eng": "Radium 223 dichloride"
+ },
+ "D000146": {
+  "kor": "아비라테론",
+  "eng": "Abiraterone"
+ },
+ "D000404": {
+  "kor": "펠로디핀",
+  "eng": "Felodipine"
+ },
+ "D000616": {
+  "kor": "레르카니디핀",
+  "eng": "Lercanidipine"
+ },
+ "D000518": {
+  "kor": "피타바스타틴",
+  "eng": "Pitavastatin"
+ },
+ "D001329": {
+  "kor": "이오베르솔",
+  "eng": "Ioversol"
+ },
+ "D000316": {
+  "kor": "덱스브롬페니라민",
+  "eng": "Dexbrompheniramine"
+ },
+ "D000080": {
+  "kor": "기메라실",
+  "eng": "Gimeracil"
+ },
+ "D000623": {
+  "kor": "플루오로우라실",
+  "eng": "Fluorouracil"
+ },
+ "D000768": {
+  "kor": "카페시타빈",
+  "eng": "Capecitabine"
+ },
+ "D000504": {
+  "kor": "독시플루리딘",
+  "eng": "Doxifluridine"
+ },
+ "D000546": {
+  "kor": "설파메톡사졸",
+  "eng": "Sulfamethoxazole"
+ },
+ "D001362": {
+  "kor": "글레카프레비르",
+  "eng": "Glecaprevir"
+ },
+ "D001364": {
+  "kor": "레테르모비르",
+  "eng": "Letermovir"
+ },
+ "D001365": {
+  "kor": "네투피탄트",
+  "eng": "Netupitant"
+ },
+ "D001367": {
+  "kor": "테고프라잔",
+  "eng": "Tegoprazan"
+ },
+ "D000170": {
+  "kor": "제미플록사신",
+  "eng": "Gemifloxacin"
+ },
+ "D001558": {
+  "kor": "디발프로엑스",
+  "eng": "Divalproex"
+ },
+ "D001559": {
+  "kor": "포스카네트",
+  "eng": "Foscarnet"
+ },
+ "D001456": {
+  "kor": "펜타미딘",
+  "eng": "Pentamidine"
+ },
+ "D001560": {
+  "kor": "히스티딘아연",
+  "eng": "Zinc histidine"
+ },
+ "D000397": {
+  "kor": "디페니실라민",
+  "eng": "Penicillamine"
+ },
+ "D001561": {
+  "kor": "데피브로타이드",
+  "eng": "Defibrotide"
+ },
+ "D001261": {
+  "kor": "알테플라제",
+  "eng": "Alteplase"
+ },
+ "D001347": {
+  "kor": "테넥테플라제",
+  "eng": "Tenecteplase"
+ },
+ "D001407": {
+  "kor": "오미데네팍이소프로필",
+  "eng": "Omidenepag isopropyl"
+ },
+ "D000481": {
+  "kor": "타플루프로스트",
+  "eng": "Tafluprost"
+ },
+ "D001419": {
+  "kor": "빅테그라비르",
+  "eng": "Bictegravir"
+ },
+ "D001562": {
+  "kor": "라놀라진",
+  "eng": "Ranolazine"
+ },
+ "D001563": {
+  "kor": "도라비린",
+  "eng": "Doravirine"
+ },
+ "D000306": {
+  "kor": "플루바스타틴",
+  "eng": "Fluvastatin"
+ },
+ "D000305": {
+  "kor": "프라바스타틴",
+  "eng": "Pravastatin"
+ },
+ "D001650": {
+  "kor": "니르마트렐비르",
+  "eng": "Nirmatrelvir"
+ },
+ "D001723": {
+  "kor": "이소소르비드이질산염",
+  "eng": "isosorbide dinitrate"
+ },
+ "D001724": {
+  "kor": "발베나진",
+  "eng": "Valbenazine"
+ },
+ "D001725": {
+  "kor": "듀테트라베나진",
+  "eng": "Deutetrabenazine"
+ },
+ "D001722": {
+  "kor": "이소소르비드일질산염",
+  "eng": "isosorbide mononitrate"
+ },
+ "D001743": {
+  "kor": "피네레논",
+  "eng": "Finerenone"
+ },
+ "D001747": {
+  "kor": "포스네투피탄트",
+  "eng": "Fosnetupitant"
+ },
+ "D001700": {
+  "kor": "페드라티닙",
+  "eng": "Fedratinib"
+ },
+ "D001697": {
+  "kor": "롤라티닙",
+  "eng": "Lorlatinib"
+ },
+ "D000875": {
+  "kor": "알펜타닐",
+  "eng": "Alfentanil"
+ },
+ "D000097": {
+  "kor": "펜타닐",
+  "eng": "Fentanyl"
+ },
+ "D001748": {
+  "kor": "카보테그라비르",
+  "eng": "Cabotegravir"
+ },
+ "D001609": {
+  "kor": "베네토클락스",
+  "eng": "Venetoclax"
+ },
+ "D001751": {
+  "kor": "아픽사반",
+  "eng": "Apixaban"
+ },
+ "D001060": {
+  "kor": "에독사반",
+  "eng": "Edoxaban"
+ },
+ "D001580": {
+  "kor": "엘리글루스타트",
+  "eng": "Eliglustat"
+ },
+ "D000026": {
+  "kor": "시프로헵타딘",
+  "eng": "Cyproheptadine"
+ },
+ "D001755": {
+  "kor": "필고티닙",
+  "eng": "Filgotinib"
+ },
+ "D001003": {
+  "kor": "토파시티닙",
+  "eng": "Tofacitinib"
+ },
+ "D001763": {
+  "kor": "루라시돈",
+  "eng": "Lurasidone"
+ },
+ "D000988": {
+  "kor": "클로피도그렐",
+  "eng": "Clopidogrel"
+ },
+ "D001780": {
+  "kor": "아팔루타마이드",
+  "eng": "Apalutamide"
+ },
+ "D001363": {
+  "kor": "피브렌타스비르",
+  "eng": "Pibrentasvir"
+ },
+ "D000461": {
+  "kor": "에베로리무스",
+  "eng": "Everolimus"
+ },
+ "D001781": {
+  "kor": "살메테롤",
+  "eng": "Salmeterol"
+ },
+ "D001783": {
+  "kor": "오자니모드",
+  "eng": "Ozanimod"
+ },
+ "D001693": {
+  "kor": "보수티닙",
+  "eng": "Bosutinib"
+ },
+ "D001784": {
+  "kor": "투카티닙",
+  "eng": "Tucatinib"
+ },
+ "D001703": {
+  "kor": "자누브루티닙",
+  "eng": "Zanubrutinib"
+ },
+ "D000707": {
+  "kor": "플루티카손",
+  "eng": "Fluticasone"
+ },
+ "D000820": {
+  "kor": "알리트레티노인",
+  "eng": "Alitretinoin"
+ },
+ "D000182": {
+  "kor": "타이제사이클린",
+  "eng": "Tigecycline"
+ },
+ "D001418": {
+  "kor": "리보시클립",
+  "eng": "Ribociclib"
+ },
+ "D001598": {
+  "kor": "포나티닙",
+  "eng": "Ponatinib"
+ },
+ "D001711": {
+  "kor": "익사조밉",
+  "eng": "Ixazomib"
+ },
+ "D001594": {
+  "kor": "미도스타우린",
+  "eng": "Midostaurin"
+ },
+ "D001812": {
+  "kor": "이소니코틴산히드라짓",
+  "eng": "Isonicotinic acid hydrazide"
+ },
+ "D001603": {
+  "kor": "에슬리카르바제핀아세테이트",
+  "eng": "Eslicarbazepine acetate"
+ },
+ "D001604": {
+  "kor": "사피나미드",
+  "eng": "Safinamide"
+ },
+ "D001552": {
+  "kor": "부로수맙",
+  "eng": "Burosumab"
+ },
+ "D000658": {
+  "kor": "알렌드론산",
+  "eng": "Alendronate"
+ },
+ "D001817": {
+  "kor": "인산수소나트륨무수물",
+  "eng": "Monobasic sodium phosphate"
+ },
+ "D001606": {
+  "kor": "브리가티닙",
+  "eng": "Brigatinib"
+ },
+ "D001611": {
+  "kor": "베돌리주맙",
+  "eng": "Vedolizumab"
+ },
+ "D001451": {
+  "kor": "나탈리주맙",
+  "eng": "Natalizumab"
+ },
+ "D001612": {
+  "kor": "이사부코나조늄",
+  "eng": "Isavuconazonium"
+ },
+ "D001736": {
+  "kor": "베리시구앗",
+  "eng": "Vericiguat"
+ },
+ "D001648": {
+  "kor": "펙수프라잔",
+  "eng": "Fexuprazan"
+ },
+ "D001701": {
+  "kor": "아칼라브루티닙",
+  "eng": "Acalabrutinib"
+ },
+ "D001699": {
+  "kor": "네라티닙",
+  "eng": "Neratinib"
+ },
+ "D001818": {
+  "kor": "프라지콴텔",
+  "eng": "Praziquantel"
+ },
+ "D001542": {
+  "kor": "D-만니톨",
+  "eng": "D-Mannitol"
+ },
+ "D001819": {
+  "kor": "염화칼슘",
+  "eng": "Calcium chloride"
+ },
+ "D001820": {
+  "kor": "디곡신",
+  "eng": "Digoxin"
+ },
+ "D000494": {
+  "kor": "글루콘산칼슘",
+  "eng": "Calcium Gluconate"
+ },
+ "D001323": {
+  "kor": "델라마니드",
+  "eng": "Delamanid"
+ },
+ "D001469": {
+  "kor": "에데트산칼슘나트륨",
+  "eng": "Edetate Calcium Disodium(Calcium EDTA)"
+ },
+ "D001821": {
+  "kor": "아갈시다제알파",
+  "eng": "Agalsidase α"
+ },
+ "D001585": {
+  "kor": "카보잔티닙",
+  "eng": "Cabozantinib"
+ },
+ "D000055": {
+  "kor": "클로니딘",
+  "eng": "Clonidine"
+ },
+ "D001588": {
+  "kor": "엔트렉티닙",
+  "eng": "Entrectinib"
+ },
+ "D001589": {
+  "kor": "길테리티닙",
+  "eng": "Gilteritinib"
+ },
+ "D001590": {
+  "kor": "이브루티닙",
+  "eng": "Ibrutinib"
+ }
+}

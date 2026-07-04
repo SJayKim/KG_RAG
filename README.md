@@ -22,8 +22,8 @@ Knowledge Graph 기반 RAG **에이전트** 시스템 포트폴리오. 목표는
 
 - ✅ 아이디어 발굴 + 적대적 검증 + 설계 문서 완료 (office-hours 브레인스토밍 단계)
 - ✅ autoplan 4단계 설계 검토 통과 + 게이트 결정 반영 (2026-06-28, `docs/DESIGN-REVIEW.md`)
-- ✅ **Day 1–3 게이트 실행** (2026-07-04, `docs/DAY1-3-GATE.md`) — 조건부 GO. openFDA CYP3A4 축 PASS, 골드 5개·크로스워크 18성분 확보.
-- ⛔ **하드 블로커 1개 = DUR 키 발급(사용자 액션).** 해소되면 Week 1(얇은 end-to-end 슬라이스) 진입.
+- ✅ **Day 1–3 게이트 통과** (2026-07-04, `docs/DAY1-3-GATE.md`) — **GO.** openFDA CYP3A4 축 PASS, DUR `15056780` 채택(전체 1,816 병용금기 엣지 + 472 D-code 사전 확보), 골드 5개·크로스워크 18성분(D-code 매핑 완료).
+- ⬜ **Week 1(얇은 end-to-end 슬라이스) 진입 준비 완료.** 하드 블로커 없음. 다음 = 라벨 추출 정량화 + 그래프 적재.
 
 ## 핵심 결정
 
