@@ -9,7 +9,7 @@
 
 | # | 게이트 | 상태 | 근거 |
 |---|---|---|---|
-| 1 | DUR 데이터셋 ID 확정 (`15056780` vs `15059486`) | ⛔ **BLOCKED (사용자 액션)** | 호스트 도달 확인, 그러나 `serviceKey` 사용자 발급 필요 + 엔드포인트 버전 경로 Swagger 재확인 필요 |
+| 1 | DUR 데이터셋 ID 확정 (`15056780` vs `15059486`) | 🟡 **거의 완료 (게이트웨이 전파 대기)** | 키 발급·저장 완료, **엔드포인트 정확히 확정**, 키 유효성 검증(401 vs 403). 승인이 트래픽 게이트웨이에 전파되면 10행 실측 자동 완료 |
 | 2 | openFDA 라벨 CYP3A4 문장 실재 | ✅ **PASS** | simvastatin·atorvastatin·lovastatin 기질 문장, 억제제·유도제 role 문장 전부 실측 |
 | 3 | 전이 골드 5개(라벨 근거까지) | ✅ **PASS** | `transitive_gold_v0.jsonl` — 5개 층화, 각 hop 실측 라벨 문장 앵커 |
 | 4 | 20–30 라벨 추출 미니평가 | 🟡 **부분 (설계 완료, 실측 대기)** | 추출 스키마·전략 확정, 하네스 스크립트 초안. 20–30 라벨 정량 P/R은 Week1 Day1–2 |
@@ -62,17 +62,28 @@ agentic 벡터는 "이 억제제가 이 기질에 해당하는가"를 매번 카
 
 ## Gate별 상세
 
-### Gate 1 — DUR 데이터셋 ID ⛔ BLOCKED (사용자 액션 필요)
+### Gate 1 — DUR 데이터셋 ID 🟡 거의 완료 (게이트웨이 전파 대기)
 
-- **확인됨:** 호스트 `apis.data.go.kr` 도달(HTTP 응답). 데이터셋 페이지 `data.go.kr/data/15056780`(성분)·`15059486`(품목) 실재.
-- **블로커:** (1) OpenAPI 호출에 **개발계정 `serviceKey` 필요** — data.go.kr 로그인 후 "활용신청"으로 발급(개발계정 자동승인, ~10k/일). Claude가 대신 발급 불가.
-  (2) 엔드포인트 경로에 **버전 접미사**(예: `...Service03`)가 있고 시기별로 바뀐다 → 발급 페이지의 **Swagger UI/가이드 PDF**로 정확한 operation명 확인 필요.
-- **사용자 다음 행동 (Gate 1 해소):**
-  1. `data.go.kr` 로그인 → `15056780`(DUR 성분정보) + `15059486`(DUR 품목정보) **둘 다 활용신청** → serviceKey 발급.
-  2. 각 데이터셋 Swagger에서 **병용금기 operation**(`getUsjntTabooInfoList` 계열) 호출 → JSON 10행 확인.
-  3. **성분코드 쌍(Ingredient↔Ingredient)이 깨끗하게 나오는 ID를 채택**(스키마가 성분 레벨 조인이므로). 품목쌍만 나오면 품목→성분 조인 필요.
-  4. 발급한 키는 `.env`에 `DATA_GO_KR_KEY=...`로 (커밋 금지 — `.gitignore`가 `.env` 차단 확인함).
-- **참고:** 이 게이트는 **데이터 수집 가능성**을 확정하는 것. openFDA(Gate 2)로 CYP 기전 축은 이미 검증됐으므로, DUR 축은 "직접 금기(1홉) legibility 래퍼"로서 키 발급만 되면 저리스크.
+- **키 발급·저장 완료:** 사용자가 `15056780`·`15059486` 둘 다 활용신청 → 키 발급. repo `.env`의 `DATA_GO_KR_KEY`에 저장(`.gitignore`가 `.env` 차단 확인).
+- **엔드포인트 정확히 확정** (openapi.do 페이지 HTML에서 실측 추출 — ⚠️ 서비스와 operation의 버전 접미사가 **다르다**, 이래서 순진한 `03/03`·`02/02` 조합이 다 실패):
+
+  | 데이터셋 | 병용금기 엔드포인트 |
+  |---|---|
+  | 성분 `15056780` | `https://apis.data.go.kr/1471000/DURIrdntInfoService03/getUsjntTabooInfoList02` |
+  | 품목 `15059486` | `https://apis.data.go.kr/1471000/DURPrdlstInfoService03/getUsjntTabooInfoList03` |
+
+  (기타 성분 operation: `getSpcifyAgrdeTabooInfoList02`·`getPwnmTabooInfoList02`·`getCpctyAtentInfoList02`·`getMdctnPdAtentInfoList02`·`getOdsnAtentInfoList02`·`getEfcyDplctInfoList02`. 품목은 대응 `...03`.)
+- **키 유효성 검증됨 (핵심 진단):** 정답 경로에 대해
+  - **무효키 → HTTP 401 Unauthorized**
+  - **발급받은 키 → HTTP 403 Forbidden** (data.go.kr 표준 XML 오류 아닌 평문)
+
+  게이트웨이가 두 키를 **구분**한다 = 우리 키는 시스템에 **등록됨**. 403 = "인증됐으나 이 API 사용 권한 아직 없음" → **활용신청 승인이 트래픽 게이트웨이(`apis.data.go.kr`)에 전파되는 중.** data.go.kr 개발계정은 자동승인이나 게이트웨이 반영에 보통 **수분~1시간**(가끔 더).
+- **남은 것 = 전파 대기 후 자동 완료:** `scripts/gate/fetch_dur_contraindications.py`가 정답 경로로 완성됨. 200 OK 뜨는 순간 10행 저장 + 성분쌍/품목쌍 컬럼 비교 → **성분코드 쌍(Ingredient↔Ingredient)이 깨끗한 ID 채택**. 재실행:
+  ```bash
+  export $(grep DATA_GO_KR_KEY .env | xargs)
+  python scripts/gate/fetch_dur_contraindications.py 10 fixtures/dur-samples
+  ```
+- **참고:** openFDA(Gate 2)로 CYP 기전 축은 이미 검증됐으므로, DUR 축(직접 금기 1홉 legibility 래퍼)은 전파만 되면 저리스크.
 
 ### Gate 2 — openFDA CYP3A4 문장 실재 ✅ PASS
 
@@ -130,7 +141,7 @@ agentic 벡터는 "이 억제제가 이 기질에 해당하는가"를 매번 카
 
 ## 다음 세션 진입 조건 (Week 1 시작 전)
 
-1. **[사용자] Gate 1 해소** — data.go.kr DUR 키 발급 + `15056780`/`15059486` 10행 실측 → 성분쌍 ID 확정. (유일한 하드 블로커)
+1. **Gate 1 마무리** — 키·엔드포인트 확정 완료. 게이트웨이 전파(403→200) 후 `fetch_dur_contraindications.py`로 10행 실측 → 성분쌍 깨끗한 ID 채택. (자동/재실행만 남음)
 2. [코드] Week1 Day1–2 — Gate 4 정량화: 20–30 openFDA 라벨 LLM 추출 러너 + 손라벨 정답으로 P/R 측정.
 3. [코드] Week1 — `ingredient_crosswalk_v0.csv`의 RxCUI를 RxNav `approximateTerm`/ATC 브릿지로 빌드타임 해소 → coverage% 기록.
 4. [설계 반영] DESIGN.md hero 예시(G2) 옆에 **G1(강한 graph-win)을 A/B 헤드라인으로** 승격 검토.
