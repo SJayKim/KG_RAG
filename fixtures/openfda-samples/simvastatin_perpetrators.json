@@ -1,0 +1,202 @@
+{
+  "gemfibrozil": [
+    {
+      "section": "contraindications",
+      "ctx": "s, anti-viral medications, and nefazodone) [see DRUG INTERACTIONS ( 7.1 )]. Concomitant use of cyclosporine, danazol or gemfibrozil [see DRUG INTERACTIONS ( 7.1 )]. Acute liver failure or decompensated cirrhosis [see WARNINGS AND PRECAUTIONS ( 5.3 )] Hypersensitivity to simvastatin or any e"
+    },
+    {
+      "section": "contraindications",
+      "ctx": " macrolide antibiotics, anti-viral medications, and nefazodone) ( 4 , 7.1 ) Concomitant use of cyclosporine, danazol or gemfibrozil ( 4 , 7.1 ) Acute liver failure or decompensated cirrhosis ( 4 , 5.3 ) Hypersensitivity to simvastatin or any excipient in simvastatin tablets USP ( 4 , 6.2 )"
+    },
+    {
+      "section": "warnings_and_cautions",
+      "ctx": "y suspend simvastatin during the duration of strong CYP3A4 inhibitor treatment. The concomitant use of simvastatin with gemfibrozil, cyclosporine, or danazol is also contraindicated [see CONTRAINDICATIONS ( 4 ) AND DRUG INTERACTIONS ( 7.1 )]. Simvastatin dosage modifications are recommended"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "inhibitors (e.g., boceprevir and telaprevir), cobicistat-containing products, and nefazodone. Cyclosporine, Danazol, or Gemfibrozil Clinical Impact: The risk of myopathy and rhabdomyolysis is increased with concomitant use of cyclosporine, danazol, or gemfibrozil with simvastatin. Gemfibroz"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "Clinical Impact: The risk of myopathy and rhabdomyolysis is increased with concomitant use of cyclosporine, danazol, or gemfibrozil with simvastatin. Gemfibrozil may cause myopathy when given alone. Intervention: Concomitant use of cyclosporine, danazol, or gemfibrozil with simvastatin is c"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "yopathy and rhabdomyolysis is increased with concomitant use of cyclosporine, danazol, or gemfibrozil with simvastatin. Gemfibrozil may cause myopathy when given alone. Intervention: Concomitant use of cyclosporine, danazol, or gemfibrozil with simvastatin is contraindicated [see CONTRAINDI"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "imvastatin. Gemfibrozil may cause myopathy when given alone. Intervention: Concomitant use of cyclosporine, danazol, or gemfibrozil with simvastatin is contraindicated [see CONTRAINDICATIONS ( 4 )] . Amiodarone, Dronedarone, Ranolazine, or Calcium Channel Blockers Clinical Impact: The risk "
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "opathy, particularly during initiation of therapy and during upward dose titration of either drug. Fibrates (other than Gemfibrozil) Clinical Impact: Fibrates may cause myopathy when given alone. The risk of myopathy and rhabdomyolysis is increased with concomitant use of fibrates with simv"
+    }
+  ],
+  "cyclosporine": [
+    {
+      "section": "contraindications",
+      "ctx": "als, macrolide antibiotics, anti-viral medications, and nefazodone) [see DRUG INTERACTIONS ( 7.1 )]. Concomitant use of cyclosporine, danazol or gemfibrozil [see DRUG INTERACTIONS ( 7.1 )]. Acute liver failure or decompensated cirrhosis [see WARNINGS AND PRECAUTIONS ( 5.3 )] Hypersensitivity"
+    },
+    {
+      "section": "contraindications",
+      "ctx": "elect azole anti-fungals, macrolide antibiotics, anti-viral medications, and nefazodone) ( 4 , 7.1 ) Concomitant use of cyclosporine, danazol or gemfibrozil ( 4 , 7.1 ) Acute liver failure or decompensated cirrhosis ( 4 , 5.3 ) Hypersensitivity to simvastatin or any excipient in simvastatin "
+    },
+    {
+      "section": "warnings_and_cautions",
+      "ctx": "vastatin during the duration of strong CYP3A4 inhibitor treatment. The concomitant use of simvastatin with gemfibrozil, cyclosporine, or danazol is also contraindicated [see CONTRAINDICATIONS ( 4 ) AND DRUG INTERACTIONS ( 7.1 )]. Simvastatin dosage modifications are recommended for patients "
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "vir), select HCV protease inhibitors (e.g., boceprevir and telaprevir), cobicistat-containing products, and nefazodone. Cyclosporine, Danazol, or Gemfibrozil Clinical Impact: The risk of myopathy and rhabdomyolysis is increased with concomitant use of cyclosporine, danazol, or gemfibrozil wi"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": ", Danazol, or Gemfibrozil Clinical Impact: The risk of myopathy and rhabdomyolysis is increased with concomitant use of cyclosporine, danazol, or gemfibrozil with simvastatin. Gemfibrozil may cause myopathy when given alone. Intervention: Concomitant use of cyclosporine, danazol, or gemfibro"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "zol, or gemfibrozil with simvastatin. Gemfibrozil may cause myopathy when given alone. Intervention: Concomitant use of cyclosporine, danazol, or gemfibrozil with simvastatin is contraindicated [see CONTRAINDICATIONS ( 4 )] . Amiodarone, Dronedarone, Ranolazine, or Calcium Channel Blockers C"
+    }
+  ],
+  "amiodarone": [
+    {
+      "section": "warnings_and_cautions",
+      "ctx": ")]. Simvastatin dosage modifications are recommended for patients taking lomitapide, verapamil, diltiazem, dronedarone, amiodarone, amlodipine or ranolazine [see DOSAGE AND ADMINISTRATION ( 2.5 )]. Simvastatin use should be temporarily suspended in patients taking daptomycin. Lipid modifyi"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "mitant use of cyclosporine, danazol, or gemfibrozil with simvastatin is contraindicated [see CONTRAINDICATIONS ( 4 )] . Amiodarone, Dronedarone, Ranolazine, or Calcium Channel Blockers Clinical Impact: The risk of myopathy and rhabdomyolysis is increased by concomitant use of amiodarone, d"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "or Calcium Channel Blockers Clinical Impact: The risk of myopathy and rhabdomyolysis is increased by concomitant use of amiodarone, dronedarone, ranolazine, or calcium channel blockers with simvastatin. Intervention: For patients taking verapamil, diltiazem, or dronedarone, do not exceed s"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "n: For patients taking verapamil, diltiazem, or dronedarone, do not exceed simvastatin 10 mg daily. For patients taking amiodarone, amlodipine, or ranolazine, do not exceed simvastatin 20 mg daily [see DOSAGE AND ADMINISTRATION ( 2.5 )] . Lomitapide Clinical Impact: Simvastatin exposure is"
+    },
+    {
+      "section": "dosage_and_administration",
+      "ctx": "nts taking Verapamil, Diltiazem, or Dronedarone Do not exceed simvastatin tablets USP 10 mg once daily. Patients taking Amiodarone, Amlodipine, or Ranolazine Do not exceed simvastatin tablets USP 20 mg once daily."
+    }
+  ],
+  "diltiazem": [
+    {
+      "section": "warnings_and_cautions",
+      "ctx": "DRUG INTERACTIONS ( 7.1 )]. Simvastatin dosage modifications are recommended for patients taking lomitapide, verapamil, diltiazem, dronedarone, amiodarone, amlodipine or ranolazine [see DOSAGE AND ADMINISTRATION ( 2.5 )]. Simvastatin use should be temporarily suspended in patients taking "
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "ne, dronedarone, ranolazine, or calcium channel blockers with simvastatin. Intervention: For patients taking verapamil, diltiazem, or dronedarone, do not exceed simvastatin 10 mg daily. For patients taking amiodarone, amlodipine, or ranolazine, do not exceed simvastatin 20 mg daily [see D"
+    },
+    {
+      "section": "dosage_and_administration",
+      "ctx": "atin tablets USP chronically while taking lomitapide) [see DOSAGE AND ADMINISTRATION (2.1)]. Patients taking Verapamil, Diltiazem, or Dronedarone Do not exceed simvastatin tablets USP 10 mg once daily. Patients taking Amiodarone, Amlodipine, or Ranolazine Do not exceed simvastatin tablets"
+    }
+  ],
+  "verapamil": [
+    {
+      "section": "warnings_and_cautions",
+      "ctx": " ( 4 ) AND DRUG INTERACTIONS ( 7.1 )]. Simvastatin dosage modifications are recommended for patients taking lomitapide, verapamil, diltiazem, dronedarone, amiodarone, amlodipine or ranolazine [see DOSAGE AND ADMINISTRATION ( 2.5 )]. Simvastatin use should be temporarily suspended in patie"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "of amiodarone, dronedarone, ranolazine, or calcium channel blockers with simvastatin. Intervention: For patients taking verapamil, diltiazem, or dronedarone, do not exceed simvastatin 10 mg daily. For patients taking amiodarone, amlodipine, or ranolazine, do not exceed simvastatin 20 mg d"
+    },
+    {
+      "section": "dosage_and_administration",
+      "ctx": " of simvastatin tablets USP chronically while taking lomitapide) [see DOSAGE AND ADMINISTRATION (2.1)]. Patients taking Verapamil, Diltiazem, or Dronedarone Do not exceed simvastatin tablets USP 10 mg once daily. Patients taking Amiodarone, Amlodipine, or Ranolazine Do not exceed simvasta"
+    }
+  ],
+  "grapefruit": [
+    {
+      "section": "warnings_and_cautions",
+      "ctx": "arily suspended in patients taking daptomycin. Lipid modifying doses (≥1 gram/day) of niacin, fibrates, colchicine, and grapefruit juice may also increase the risk of myopathy and rhabdomyolysis [see DRUG INTERACTIONS ( 7.1 )]. Use the 80 mg daily dosage of simvastatin only in patients who"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": " INTERACTIONS See full prescribing information for details regarding concomitant use of simvastatin with other drugs or grapefruit juice that increase the risk of myopathy and rhabdomyolysis. ( 2.5 , 7.1 ) Coumarin Anticoagulants: Obtain INR before simvastatin initiation and monitor INR du"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "ns and symptoms of myopathy, particularly during initiation of therapy and during upward dose titration of either drug. Grapefruit Juice Clinical Impact: Grapefruit juice can raise the plasma levels of simvastatin and may increase the risk of myopathy and rhabdomyolysis. Intervention: Avoi"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "cularly during initiation of therapy and during upward dose titration of either drug. Grapefruit Juice Clinical Impact: Grapefruit juice can raise the plasma levels of simvastatin and may increase the risk of myopathy and rhabdomyolysis. Intervention: Avoid grapefruit juice when taking sim"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "an raise the plasma levels of simvastatin and may increase the risk of myopathy and rhabdomyolysis. Intervention: Avoid grapefruit juice when taking simvastatin. 7.2 Simvastatin Effects on Other Drugs Table 3 presents Simvastatin's effect on other drugs and instructions for preventing or m"
+    }
+  ],
+  "dronedarone": [
+    {
+      "section": "warnings_and_cautions",
+      "ctx": "CTIONS ( 7.1 )]. Simvastatin dosage modifications are recommended for patients taking lomitapide, verapamil, diltiazem, dronedarone, amiodarone, amlodipine or ranolazine [see DOSAGE AND ADMINISTRATION ( 2.5 )]. Simvastatin use should be temporarily suspended in patients taking daptomycin. L"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "f cyclosporine, danazol, or gemfibrozil with simvastatin is contraindicated [see CONTRAINDICATIONS ( 4 )] . Amiodarone, Dronedarone, Ranolazine, or Calcium Channel Blockers Clinical Impact: The risk of myopathy and rhabdomyolysis is increased by concomitant use of amiodarone, dronedarone, r"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "hannel Blockers Clinical Impact: The risk of myopathy and rhabdomyolysis is increased by concomitant use of amiodarone, dronedarone, ranolazine, or calcium channel blockers with simvastatin. Intervention: For patients taking verapamil, diltiazem, or dronedarone, do not exceed simvastatin 10"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "e, ranolazine, or calcium channel blockers with simvastatin. Intervention: For patients taking verapamil, diltiazem, or dronedarone, do not exceed simvastatin 10 mg daily. For patients taking amiodarone, amlodipine, or ranolazine, do not exceed simvastatin 20 mg daily [see DOSAGE AND ADMINI"
+    },
+    {
+      "section": "dosage_and_administration",
+      "ctx": "SP chronically while taking lomitapide) [see DOSAGE AND ADMINISTRATION (2.1)]. Patients taking Verapamil, Diltiazem, or Dronedarone Do not exceed simvastatin tablets USP 10 mg once daily. Patients taking Amiodarone, Amlodipine, or Ranolazine Do not exceed simvastatin tablets USP 20 mg once "
+    }
+  ],
+  "ranolazine": [
+    {
+      "section": "warnings_and_cautions",
+      "ctx": "ifications are recommended for patients taking lomitapide, verapamil, diltiazem, dronedarone, amiodarone, amlodipine or ranolazine [see DOSAGE AND ADMINISTRATION ( 2.5 )]. Simvastatin use should be temporarily suspended in patients taking daptomycin. Lipid modifying doses (≥1 gram/day) of "
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "e, danazol, or gemfibrozil with simvastatin is contraindicated [see CONTRAINDICATIONS ( 4 )] . Amiodarone, Dronedarone, Ranolazine, or Calcium Channel Blockers Clinical Impact: The risk of myopathy and rhabdomyolysis is increased by concomitant use of amiodarone, dronedarone, ranolazine, o"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "rs Clinical Impact: The risk of myopathy and rhabdomyolysis is increased by concomitant use of amiodarone, dronedarone, ranolazine, or calcium channel blockers with simvastatin. Intervention: For patients taking verapamil, diltiazem, or dronedarone, do not exceed simvastatin 10 mg daily. F"
+    },
+    {
+      "section": "drug_interactions",
+      "ctx": "pamil, diltiazem, or dronedarone, do not exceed simvastatin 10 mg daily. For patients taking amiodarone, amlodipine, or ranolazine, do not exceed simvastatin 20 mg daily [see DOSAGE AND ADMINISTRATION ( 2.5 )] . Lomitapide Clinical Impact: Simvastatin exposure is approximately doubled with"
+    },
+    {
+      "section": "dosage_and_administration",
+      "ctx": "azem, or Dronedarone Do not exceed simvastatin tablets USP 10 mg once daily. Patients taking Amiodarone, Amlodipine, or Ranolazine Do not exceed simvastatin tablets USP 20 mg once daily."
+    }
+  ],
+  "clarithromycin": [
+    {
+      "section": "drug_interactions",
+      "ctx": "e.g., itraconazole, ketoconazole, posaconazole, and voriconazole), select macrolide antibiotics (e.g., erythromycin and clarithromycin), select HIV protease inhibitors (e.g., nelfinavir, ritonavir, and darunavir/ritonavir), select HCV protease inhibitors (e.g., boceprevir and telaprevir), cobi"
+    }
+  ],
+  "erythromycin": [
+    {
+      "section": "drug_interactions",
+      "ctx": "le anti-fungals (e.g., itraconazole, ketoconazole, posaconazole, and voriconazole), select macrolide antibiotics (e.g., erythromycin and clarithromycin), select HIV protease inhibitors (e.g., nelfinavir, ritonavir, and darunavir/ritonavir), select HCV protease inhibitors (e.g., boceprevir an"
+    }
+  ],
+  "itraconazole": [
+    {
+      "section": "drug_interactions",
+      "ctx": " suspend simvastatin during the course of strong CYP3A4 inhibitor treatment. Examples: Select azole anti-fungals (e.g., itraconazole, ketoconazole, posaconazole, and voriconazole), select macrolide antibiotics (e.g., erythromycin and clarithromycin), select HIV protease inhibitors (e.g., nel"
+    }
+  ],
+  "ketoconazole": [
+    {
+      "section": "drug_interactions",
+      "ctx": "statin during the course of strong CYP3A4 inhibitor treatment. Examples: Select azole anti-fungals (e.g., itraconazole, ketoconazole, posaconazole, and voriconazole), select macrolide antibiotics (e.g., erythromycin and clarithromycin), select HIV protease inhibitors (e.g., nelfinavir, riton"
+    }
+  ]
+}

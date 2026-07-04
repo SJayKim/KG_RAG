@@ -1,0 +1,156 @@
+{
+  "itraconazole": {
+    "found": true,
+    "cyp3a4_sentences": [
+      {
+        "sec": "drug_interactions",
+        "s": "Drug Interactions: Effect of Itraconazole on Other Drugs Itraconazole and its major metabolite, hydroxy-itraconazole, are potent CYP3A4 inhibitors."
+      },
+      {
+        "sec": "drug_interactions",
+        "s": "* CYP3A4 inhibitors (including itraconazole) may increase systemic contraceptive hormone concentrations."
+      },
+      {
+        "sec": "drug_interactions",
+        "s": "IMs: intermediate metabolizers, PMs: poor metabolizers Effect of Other Drugs on Itraconazole Itraconazole is mainly metabolized through CYP3A4."
+      },
+      {
+        "sec": "drug_interactions",
+        "s": "Other substances that either share this metabolic pathway or modify CYP3A4 activity may influence the pharmacokinetics of itraconazole."
+      },
+      {
+        "sec": "clinical_pharmacology",
+        "s": "In vitro studies have shown that CYP3A4 is the major enzyme involved in the metabolism of itraconazole."
+      },
+      {
+        "sec": "contraindications",
+        "s": ") Drug Interactions: Coadministration of a number of CYP3A4 substrates are contraindicated with itraconazole."
+      }
+    ]
+  },
+  "diltiazem": {
+    "found": true,
+    "cyp3a4_sentences": [
+      {
+        "sec": "drug_interactions",
+        "s": "Avoid coadministration of diltiazem with rifampin or any known CYP3A4 inducer."
+      },
+      {
+        "sec": "drug_interactions",
+        "s": "Statins : Diltiazem is an inhibitor of CYP3A4 and has been shown to increase significantly the AUC of some statins."
+      },
+      {
+        "sec": "drug_interactions",
+        "s": "The risk of myopathy and rhabdomyolysis with statins metabolized by CYP3A4 may be increased with concomitant use of diltiazem."
+      },
+      {
+        "sec": "drug_interactions",
+        "s": "When possible, use a non-CYP3A4-metabolized statin together with diltiazem;"
+      }
+    ]
+  },
+  "erythromycin": {
+    "found": true,
+    "cyp3a4_sentences": []
+  },
+  "rifampin": {
+    "found": true,
+    "cyp3a4_sentences": [
+      {
+        "sec": "drug_interactions",
+        "s": "Decrease exposure Selective 5-HT3 Receptor Antagonists Ondansetron Decrease exposure Statins Metabolized by CYP3A4 Simvastatin Decrease exposure Thiazolidinediones Rosiglitazone Decrease AUC by 66% Tricyclic Antidepressants Nortriptyline A tuberculosis treatme"
+      },
+      {
+        "sec": "drug_interactions",
+        "s": "5 g/day) IM Prevention or Management: Avoid the use of rifampin, a strong CYP3A4 inducer, if possible."
+      },
+      {
+        "sec": "contraindications",
+        "s": "Concomitant use of lurasidone with strong CYP3A4 inducers (e."
+      }
+    ]
+  },
+  "carbamazepine": {
+    "found": true,
+    "cyp3a4_sentences": [
+      {
+        "sec": "drug_interactions",
+        "s": "Agents That Increase Carbamazepine Levels CYP3A4 inhibitors inhibit carbamazepine metabolism and can thus increase plasma carbamazepine levels."
+      },
+      {
+        "sec": "drug_interactions",
+        "s": "Agents That Decrease Carbamazepine Levels CYP3A4 inducers can increase the rate of carbamazepine metabolism."
+      },
+      {
+        "sec": "drug_interactions",
+        "s": "The use of concomitant strong CYP3A4 inducers such as carbamazepine should be avoided with temsirolimus."
+      },
+      {
+        "sec": "drug_interactions",
+        "s": "The rate of metabolism and the leukopenic activity of cyclophosphamide are reportedly increased by chronic coadministration of CYP3A4 inducers."
+      }
+    ]
+  },
+  "midazolam": {
+    "found": true,
+    "cyp3a4_sentences": []
+  },
+  "atorvastatin": {
+    "found": true,
+    "cyp3a4_sentences": [
+      {
+        "sec": "drug_interactions",
+        "s": "1 Drug Interactions that may Increase the Risk of Myopathy and Rhabdomyolysis with Atorvastatin Calcium Atorvastatin is a substrate of CYP3A4 and transporters (e."
+      },
+      {
+        "sec": "drug_interactions",
+        "s": "Atorvastatin plasma levels can be significantly increased with concomitant administration of inhibitors of CYP3A4 and transporters."
+      },
+      {
+        "sec": "drug_interactions",
+        "s": "Table 2: Drug Interactions that may Increase the Risk of Myopathy and Rhabdomyolysis with Atorvastatin Cyclosporine or Gemfibrozil Clinical Impact: Atorvastatin plasma levels were significantly increased with concomitant administration of atorvastatin and cycl"
+      },
+      {
+        "sec": "drug_interactions",
+        "s": "Anti-Viral Medications Clinical Impact: Atorvastatin plasma levels were significantly increased with concomitant administration of atorvastatin with many anti-viral medications, which are inhibitors of CYP3A4 and/or transporters (e."
+      },
+      {
+        "sec": "drug_interactions",
+        "s": "Select Azole Antifungals or Macrolide Antibiotics Clinical Impact: Atorvastatin plasma levels were significantly increased with concomitant administration of atorvastatin with select azole antifungals or macrolide antibiotics, due to inhibition of CYP3A4 and/o"
+      },
+      {
+        "sec": "warnings_and_cautions",
+        "s": "Steps to Prevent or Reduce the Risk of Myopathy and Rhabdomyolysis Atorvastatin exposure may be increased by drug interactions due to inhibition of cytochrome P450 enzyme 3A4 (CYP3A4) and/or transporters (e."
+      }
+    ]
+  },
+  "lovastatin": {
+    "found": true,
+    "cyp3a4_sentences": [
+      {
+        "sec": "drug_interactions",
+        "s": "Drug Interactions CYP3A4 Interactions Lovastatin is metabolized by CYP3A4 but has no CYP3A4 inhibitory activity;"
+      },
+      {
+        "sec": "drug_interactions",
+        "s": "therefore it is not expected to affect the plasma concentrations of other drugs metabolized by CYP3A4."
+      },
+      {
+        "sec": "drug_interactions",
+        "s": "Strong inhibitors of CYP3A4 (e."
+      },
+      {
+        "sec": "drug_interactions",
+        "s": "Interactions With Lipid-Lowering Drugs That Can Cause Myopathy When Given Alone The risk of myopathy is also increased by the following lipid-lowering drugs that are not strong CYP3A4 inhibitors, but which can cause myopathy when given alone."
+      },
+      {
+        "sec": "clinical_pharmacology",
+        "s": "The increase in AUC for lovastatin and lovastatin acid is presumably due, in part, to inhibition of CYP3A4."
+      },
+      {
+        "sec": "clinical_pharmacology",
+        "s": "Strong inhibitors of CYP3A4 can raise the plasma levels of HMG-CoA reductase inhibitory activity and increase the risk of myopathy (see WARNINGS , Myopathy/Rhabdomyolysis and PRECAUTIONS , Drug Interactions )."
+      }
+    ]
+  }
+}

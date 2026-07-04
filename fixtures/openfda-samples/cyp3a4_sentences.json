@@ -1,0 +1,69 @@
+{
+  "simvastatin": {
+    "found": true,
+    "set_id": "00896fff-081d-4553-be8c-1999a8a73dda",
+    "sections": {
+      "drug_interactions": [
+        "( 7.2 ) 7.1 Drug Interactions that Increase the Risk of Myopathy and Rhabdomyolysis with Simvastatin Simvastatin is a substrate of CYP3A4 and of the transport protein OATP1B1.",
+        "Simvastatin exposure can be significantly increased with concomitant administration of inhibitors of CYP3A4 and OATP1B1.",
+        "Table 2: Drug Interactions that Increase the Risk of Myopathy and Rhabdomyolysis with Simvastatin Strong CYP3A4 inhibitors Clinical Impact: Simvastatin is a substrate of CYP3A4.",
+        "Concomitant use of strong CYP3A4 inhibitors with simvastatin increases simvastatin exposure and increases the risk of myopathy and rhabdomyolysis, particularly with higher simvastatin dosages."
+      ],
+      "clinical_pharmacology": [
+        "Elimination Metabolism: Simvastatin is metabolized by CYP3A4.",
+        "Concomitant administration of inhibitors of the transport protein OATP1B1 and/or CYP3A4 may lead to increased exposure of simvastatin acid.",
+        "although the mechanism is not fully understood, the increase in AUC for simvastatin acid is presumably due, in part, to inhibition of CYP3A4 and/or OATP1B1 [see DRUG INTERACTIONS ( 7 )] .",
+        "† Results could be representative of the following CYP3A4 inhibitors: ketoconazole, erythromycin, clarithromycin, HIV protease inhibitors, and nefazodone."
+      ],
+      "contraindications": [
+        "4 CONTRAINDICATIONS Simvastatin is contraindicated in the following conditions: Concomitant use of strong CYP3A4 inhibitors (select azole anti-fungals, macrolide antibiotics, anti-viral medications, and nefazodone) [see DRUG INTERACTIONS ( 7.1 )].",
+        "Hypersensitivity reactions, including anaphylaxis, angioedema and Stevens-Johnson syndrome, have been reported [see ADVERSE REACTIONS ( 6.2 )] Concomitant use of strong CYP3A4 inhibitors (select azole anti-fungals, macrolide antibiotics, anti-viral medications, and nefazodone) ( 4 , 7.1 ) Concomitant use of cyclosporine, danazol or gemfibrozil ( 4 , 7.1 ) Acute liver failure or decompensated cirrhosis ( 4 , 5.3 ) Hypersensitivity to simvastatin or any excipient in simvastatin tablets USP ( 4 , 6.2 )"
+      ],
+      "warnings_and_cautions": [
+        "Steps to Prevent or Reduce the Risk of Myopathy and Rhabdomyolysis The concomitant use of strong CYP3A4 inhibitors with simvastatin is contraindicated.",
+        "If short-term treatment with strong CYP3A4 inhibitors is required, temporarily suspend simvastatin during the duration of strong CYP3A4 inhibitor treatment."
+      ]
+    }
+  },
+  "clarithromycin": {
+    "found": true,
+    "set_id": "0be243c6-de02-45dd-8210-cab1bbc8dfa7",
+    "sections": {
+      "drug_interactions": [
+        "Colchicine (in patients with normal renal and hepatic function) Use With Caution Antipsychotics: Pimozide Contraindicated Pimozide: [See Contraindications ( 4.2 )] Quetiapine Lurasidone Quetiapine: Quetiapine is a substrate for CYP3A4, which is inhibited by clarithromycin.",
+        "Refer to quetiapine prescribing information for recommendations on dose reduction if co‑administered with CYP3A4 inhibitors such as clarithromycin."
+      ],
+      "contraindications": [
+        "Concomitant administration of clarithromycin tablets with HMG-CoA reductase inhibitors (statins) that are extensively metabolized by CYP3A4 (lovastatin or simvastatin) is contraindicated, due to the increased risk of myopathy, including rhabdomyolysis [see Warnings and Precautions ( 5.4 ) and Drug Interactions ( 7 )]."
+      ],
+      "warnings_and_cautions": [
+        "5.4 Serious Adverse Reactions Due to Concomitant Use with Other Drugs Drugs metabolized by CYP3A4: Serious adverse reactions have been reported in patients taking clarithromycin tablets concomitantly with CYP3A4 substrates.",
+        "and hypotension and acute kidney injury with calcium channel blockers metabolized by CYP3A4 (e.g., verapamil, amlodipine, diltiazem, nifedipine).",
+        "Most reports of acute kidney injury with calcium channel blockers metabolized by CYP3A4 involved elderly patients 65 years of age or older.",
+        "Use clarithromycin tablets with caution when administered concurrently with medications that induce the cytochrome CYP3A4 enzyme."
+      ]
+    }
+  },
+  "amiodarone": {
+    "found": true,
+    "set_id": "02f4a736-63ed-4ad4-a1f1-b21a71e928bd",
+    "sections": {
+      "drug_interactions": [
+        "Lower starting dose of other CYP3A4 substrates may be required."
+      ]
+    }
+  },
+  "rifampin": {
+    "found": true,
+    "set_id": "036ab68e-5085-4edc-bd83-784b43d64eab",
+    "sections": {
+      "drug_interactions": [
+        "Decrease exposure Selective 5-HT3 Receptor Antagonists Ondansetron Decrease exposure Statins Metabolized by CYP3A4 Simvastatin Decrease exposure Thiazolidinediones Rosiglitazone Decrease AUC by 66% Tricyclic Antidepressants Nortriptyline A tuberculosis treatment regimen including rifampin (600 mg/day), isoniazid (300 mg/day), pyrazinamide (500 mg 3× per day), and pyridoxine (25 mg) was associated with higher than expected doses of nortriptyline were required to obtain a therapeutic drug level.",
+        "Doxycycline Administered with rifampin (10 mg/kg daily) Decrease exposure Irinotecan Administered with an antibiotic regimen including rifampin (450 mg/day), isoniazid (300 mg/day), and streptomycin (0.5 g/day) IM Prevention or Management: Avoid the use of rifampin, a strong CYP3A4 inducer, if possible."
+      ],
+      "contraindications": [
+        "Concomitant use of lurasidone with strong CYP3A4 inducers (e.g., rifampin) decreased the exposure of lurasidone compared to the use of lurasidone alone."
+      ]
+    }
+  }
+}
