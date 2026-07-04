@@ -1,0 +1,216 @@
+{
+  "extractor": "regex",
+  "model": null,
+  "drugs": {
+    "simvastatin": {
+      "edges": [
+        {
+          "role": "substrate",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": null,
+          "evidence_sentence": "( 7.2 ) 7.1 Drug Interactions that Increase the Risk of Myopathy and Rhabdomyolysis with Simvastatin Simvastatin is a substrate of CYP3A4 and of the transport protein OATP1B1.",
+          "negated": false,
+          "confidence": 0.5
+        },
+        {
+          "role": "inhibitor",
+          "enzyme": "CYP3A4",
+          "strength": "strong",
+          "clinical_action": null,
+          "evidence_sentence": "If treatment with a CYP3A4 inhibitor is unavoidable, suspend simvastatin during the course of strong CYP3A4 inhibitor treatment.",
+          "negated": false,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "lovastatin": {
+      "edges": [
+        {
+          "role": "substrate",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": null,
+          "evidence_sentence": "Drug Interactions CYP3A4 Interactions Lovastatin is metabolized by CYP3A4 but has no CYP3A4 inhibitory activity;",
+          "negated": false,
+          "confidence": 0.5
+        },
+        {
+          "role": "inhibitor",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": null,
+          "evidence_sentence": "The increase in AUC for lovastatin and lovastatin acid is presumably due, in part, to inhibition of CYP3A4.",
+          "negated": false,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "atorvastatin": {
+      "edges": [
+        {
+          "role": "substrate",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": null,
+          "evidence_sentence": "7.1 Drug Interactions that may Increase the Risk of Myopathy and Rhabdomyolysis with Atorvastatin Calcium Atorvastatin is a substrate of CYP3A4 and transporters (e.g., OATP1B1/1B3, P-gp, or BCRP).",
+          "negated": false,
+          "confidence": 0.5
+        },
+        {
+          "role": "inhibitor",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": null,
+          "evidence_sentence": "Table 2: Drug Interactions that may Increase the Risk of Myopathy and Rhabdomyolysis with Atorvastatin Cyclosporine or Gemfibrozil Clinical Impact: Atorvastatin plasma levels were significantly increased with concomitant administration of atorvastatin and cyclosporine, an inhibitor of CYP3A4 and OATP1B1 [see Clinical Pharmacology (12.3) ].",
+          "negated": false,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "pravastatin": {
+      "edges": []
+    },
+    "rosuvastatin": {
+      "edges": []
+    },
+    "clarithromycin": {
+      "edges": [
+        {
+          "role": "substrate",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": null,
+          "evidence_sentence": "Concomitant administration of clarithromycin tablets with HMG-CoA reductase inhibitors (statins) that are extensively metabolized by CYP3A4 (lovastatin or simvastatin) is contraindicated, due to the increased risk of myopathy, including rhabdomyolysis [see Warnings and Precautions ( 5.4 ) and Drug Interactions ( 7 )].",
+          "negated": false,
+          "confidence": 0.5
+        },
+        {
+          "role": "inhibitor",
+          "enzyme": "CYP3A4",
+          "strength": "strong",
+          "clinical_action": null,
+          "evidence_sentence": "Clarithromycin is a strong CYP3A4 inhibitor and this interaction may occur while using both drugs at their recommended doses.",
+          "negated": false,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "erythromycin": {
+      "edges": []
+    },
+    "itraconazole": {
+      "edges": []
+    },
+    "ketoconazole": {
+      "edges": []
+    },
+    "ritonavir": {
+      "edges": []
+    },
+    "diltiazem": {
+      "edges": [
+        {
+          "role": "inducer",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": "avoid",
+          "evidence_sentence": "Avoid coadministration of diltiazem with rifampin or any known CYP3A4 inducer.",
+          "negated": false,
+          "confidence": 0.5
+        },
+        {
+          "role": "inhibitor",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": null,
+          "evidence_sentence": "Statins : Diltiazem is an inhibitor of CYP3A4 and has been shown to increase significantly the AUC of some statins.",
+          "negated": false,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "verapamil": {
+      "edges": [
+        {
+          "role": "substrate",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": null,
+          "evidence_sentence": "Drug interactions Cytochrome inducers/inhibitors: In vitro metabolic studies indicate that verapamil is metabolized by cytochrome P450 CYP3A4, CYP1A2, CYP2C8, CYP2C9, and CYP2C18.",
+          "negated": false,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "amiodarone": {
+      "edges": []
+    },
+    "dronedarone": {
+      "edges": []
+    },
+    "rifampin": {
+      "edges": [
+        {
+          "role": "inducer",
+          "enzyme": "CYP3A4",
+          "strength": "strong",
+          "clinical_action": "avoid",
+          "evidence_sentence": "Doxycycline Administered with rifampin (10 mg/kg daily) Decrease exposure Irinotecan Administered with an antibiotic regimen including rifampin (450 mg/day), isoniazid (300 mg/day), and streptomycin (0.5 g/day) IM Prevention or Management: Avoid the use of rifampin, a strong CYP3A4 inducer, if possible.",
+          "negated": false,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "carbamazepine": {
+      "edges": []
+    },
+    "phenytoin": {
+      "edges": []
+    },
+    "midazolam": {
+      "edges": []
+    },
+    "fluconazole": {
+      "edges": [
+        {
+          "role": "inhibitor",
+          "enzyme": "CYP3A4",
+          "strength": "moderate",
+          "clinical_action": null,
+          "evidence_sentence": "Drug Interactions: (See CONTRAINDICATIONS .) Fluconazole is a moderate CYP2C9 and CYP3A4 inhibitor.",
+          "negated": false,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "nefazodone": {
+      "edges": [
+        {
+          "role": "substrate",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": null,
+          "evidence_sentence": "These effects appear to be due to the inhibition of CYP3A4 by nefazodone because, in the same study, nefazodone had no significant effect on the plasma concentrations of pravastatin, which is not metabolized by CYP3A4 to a clinically significant extent.",
+          "negated": false,
+          "confidence": 0.5
+        },
+        {
+          "role": "inhibitor",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": null,
+          "evidence_sentence": "Pharmacokinetics of Nefazodone in ‘Poor Metabolizers’ and Potential Interaction with Drugs That Inhibit and/or Are Metabolized by Cytochrome P450 Isozymes CYP3A4 Isozyme – Nefazodone has been shown in vitro to be an inhibitor of CYP3A4.",
+          "negated": false,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "phenobarbital": {
+      "edges": []
+    },
+    "cyclosporine": {
+      "edges": []
+    }
+  }
+}
