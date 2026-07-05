@@ -11,6 +11,7 @@
 | `regex` (결정적 베이스라인, 키 불필요) | 0.64 | 0.25 | 0.36 | 7 / 4 / 15 |
 | `llm` (단방향 — 각 약 자기 라벨만) | **1.00** | 0.60 | 0.75 | 15 / 0 / 8 |
 | `llm-bidirectional` (+ 기질 라벨 열거 회수) | **1.00** | **0.75** | **0.86** | 18 / 0 / 5 |
+| `llm-bidirectional v2` (week1-recall: 자기서술+열거 채굴 확장) | **1.00** | **1.00** | **1.00** | 27 / 0 / 0 |
 
 - **recall = required(1차 역할) 엣지 기준** — 22약 중 20약이 required CYP3A4 엣지 1개, 2약(pravastatin·rosuvastatin)은 음성(엣지 0).
 - **precision 1.00 (LLM)** = 추출한 엣지가 전부 옳음. 허구·오귀속 0건. 음성 2약에 CYP3A4 엣지 안 붙임(하드네거티브 통과).
@@ -115,3 +116,80 @@ PYTHONUTF8=1 python scripts/extract/score_extraction.py fixtures/gold/extraction
 **Gate 4 = PASS (정량).** 추출 전략 성립: **precision 1.00, recall 0.75(양방향), F1 0.86.** 라벨 텍스트에서
 타입드 CYP3A4 엣지를 허구 없이 추출 가능함을 실측. recall 격차는 소스 커버리지 문제로 규명됐고 해소 경로가 있다.
 다음: 이 엣지들 + 1,816 DUR 직접금기 엣지를 Neo4j에 적재(Week 1 그래프 로드).
+
+---
+
+## Recall recovery (week1-recall) — 0.75 → **1.00** (precision 1.00 유지, LLM 재추출 없음)
+
+`ANTHROPIC_API_KEY` 없이(=LLM 재추출 불가) 디스크의 corpus.json만으로 **결정적** 회수. 시드
+`extracted_llm.json`은 그대로 두고 `augment_bidirectional.py`만 확장. 잔여 miss 5개(dronedarone,
+phenytoin, midazolam, phenobarbital, cyclosporine)를 **전부** 회수 — 단, 회수 엣지는 모두 corpus의
+**실제 문장을 verbatim**으로 달고(`recovered_from`), 하드네거티브는 계속 침묵.
+
+| 지표 | before (bidir) | after (bidir v2) |
+|---|---|---|
+| precision | 1.00 (18/18) | **1.00 (27/27)** |
+| recall (required) | 0.75 (15/20) | **1.00 (20/20)** |
+| F1 | 0.86 | **1.00** |
+| TP / FP / FN | 18 / 0 / 5 | **27 / 0 / 0** |
+
+하드네거티브 **pravastatin·rosuvastatin = ext(none)** 유지(FP 0). 두 약의 라벨은 *"not metabolized by
+CYP3A4"*, *"not dependent on metabolism by cytochrome P450 3A4"*처럼 **부정문**이라, 새로 넣은 negation
+guard가 정확히 걸러 substrate 오탐을 막았다.
+
+### 5개 miss → 회수 (근거 문장은 전부 corpus verbatim)
+
+| drug | 회수 역할 | 출처 라벨 | 메커니즘 | 근거 문장 (verbatim) |
+|---|---|---|---|---|
+| **cyclosporine** | inhibitor / dose-adjust | atorvastatin | 열거(동격) | *"…concomitant administration of atorvastatin and **cyclosporine, an inhibitor of CYP3A4** and OATP1B1…"* |
+| **dronedarone** | inhibitor / **moderate** / dose-adjust | dronedarone(자기 라벨) | 자기서술 | *"**Dronedarone is metabolized by CYP3A and is a moderate inhibitor of CYP3A** and CYP2D6…"* |
+| **phenytoin** | inducer / monitor | dronedarone | 열거(such as) | *"Avoid rifampin or other **CYP3A inducers such as phenobarbital, carbamazepine, phenytoin**, and St[. John's Wort]"* |
+| **phenobarbital** | inducer / monitor | dronedarone | 열거(such as) | (위와 동일 문장) |
+| **midazolam** | substrate | midazolam(자기 라벨) | 자기서술(대사) | *"…the **biotransformation of midazolam is mediated by cytochrome P450-3A4**."* |
+
+**진단 정정 (corpus 재검증 결과):** 사전 진단은 dronedarone을 "honest source-absence"로 봤으나,
+**dronedarone 자기 라벨이 스스로를 "moderate inhibitor of **CYP3A**"라고 서술**한다(위 verbatim). 놓친
+원인은 소스 부재가 아니라 라벨이 **"CYP3A4"가 아닌 "CYP3A"(subfamily) 철자**를 써서 기존 CYP3A4-strict
+정규식이 안 걸린 것. → **소스 부재로 남는 required miss는 0개.** (Week 2 과제였던 "잔여 5"가 모두 fetched
+corpus 안에 실재함을 확인.)
+
+### 왜 precision가 안 깨졌나 — 채굴 규칙 (약명 하드코딩 아님, 일반 cue-phrase 로직)
+
+1. **Subfamily tolerance (CYP3A ≡ CYP3A4).** cue 정규식의 끝 "4"를 optional로. 라벨이 이 약들을
+   "CYP3A inhibitor/inducer"로 등급/열거하는 게 흔하고(dronedarone·ritonavir 등), CYP3A4가 간 CYP3A의
+   지배적 isoform이라 DDI 귀속상 동치. **verbatim 문장을 보존**해 정규화가 감사 가능.
+2. **전 라벨 스캔 + 자기서술 채굴 추가.** 기존엔 "substrate 라벨"만 훑었으나, 가해자 라벨도 다른 가해자를
+   열거하고(dronedarone→phenytoin/phenobarbital) 자기 역할을 직접 서술함(dronedarone·midazolam).
+   자기서술은 **약명 앵커드 술어 템플릿**("X is a <strength> inhibitor of CYP3A", "X is metabolized by
+   CYP3A4", "biotransformation of X … CYP3A4")으로만 회수 → 남의 대사를 말하는 문장에 약이 단지 *언급*됐다고
+   오탐하지 않음.
+3. **열거 membership = 구조 규칙**(순진한 proximity 폐기). 초기 시도는 proximity만으로 4건 FP 발생 —
+   ritonavir 금기 블록이 문장 분리 실패로 substrate 리스트 + 뒤쪽 *"drugs that are potent CYP3A inducers"*
+   절을 한 덩어리로 뭉쳐, 앞의 midazolam/simvastatin/lovastatin/dronedarone을 **inducer로 오탐**. 수정:
+   약이 cue의 **열거 멤버**일 때만 귀속 —
+   (a) **forward**: cue 뒤 `such as / including / e.g. / : / (` 도입부 뒤 리스트에 등장(종결자 `)`·새 문장 전),
+   (b) **appositive/subject**: cue 바로 앞에서 **copula/동격**으로 결속(`X, an inhibitor…`, `X and Y are
+   substrates…`) — 단 `with/concomitant/receiving` 같은 **병용 전치사면 배제**(≠ 자기 정체).
+   이 규칙이 4건 FP + 부정직한 clarithromycin substrate 1건(*"clarithromycin … concomitantly **with** CYP3A4
+   substrates"* — 병용이지 자기 기질 아님)까지 제거.
+4. **Negation guard.** substrate/대사 주장에 cue 앞 window에 부정어(not/no/little/minimal…)가 있으면 skip
+   → pravastatin·rosuvastatin 음성 유지.
+
+### strength 정직성
+회수 inducer(phenytoin·phenobarbital)와 cyclosporine inhibitor는 근거 문장이 등급어를 안 써서
+**strength=null**로 둠(gold는 strong/moderate지만 라벨 미기재 → 허구 안 함). dronedarone만 라벨이
+명시적으로 *"moderate"*라 **moderate**로 채움. (그래서 전체 strength 정확도는 0.31로 하락 — recall을 올리며
+등급 없는 문장을 정직히 null 처리한 대가. clinical_action 정확도는 0.69로 유지.) required recall/precision은
+role 매칭이라 영향 없음.
+
+### 크로스워크 확장 (D-code는 `dur_ingredient_dcode_dict.json`과 대조 검증)
+- `cyclosporine` — `D001077` (사이클로스포린), ATC `L04AD01`, inhibitor/moderate/dose-adjust,
+  `evidence_source=openFDA-label:drug_interactions` (atorvastatin 라벨 동격으로 회수).
+- `phenobarbital` — `D000282` (페노바르비탈), ATC `N03AA02`, inducer/strong/monitor,
+  `evidence_source=openFDA-label:drug_interactions` (dronedarone 라벨 such-as 열거로 회수).
+
+### 잔여 상한
+**required 엣지 기준 소스-부재 miss = 0.** 회수 안 된 것은 전부 **optional 2차 역할**(clarithromycin·
+erythromycin·ketoconazole·diltiazem·nefazodone의 substrate 등) — 라벨이 해당 약을 CYP3A4 기질이라고
+**약명 앵커드로 술어화하지 않아** 정직하게 비워둠(P/R 무영향, 허구 회피). 재현: 위 §방법의
+`augment_bidirectional.py` 커맨드 그대로.
