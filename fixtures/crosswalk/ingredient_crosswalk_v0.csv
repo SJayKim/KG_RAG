@@ -17,3 +17,5 @@ rifampin,D000314,Rifampicin,리팜핀,J04AB02,TBD-rxnav,inducer,strong,monitor,o
 carbamazepine,D000476,Carbamazepine,카르바마제핀,N03AF01,TBD-rxnav,inducer,strong,monitor,openFDA-label:drug_interactions,"strong CYP3A4 inducer (also a substrate — dual role)"
 phenytoin,D000595,Phenytoin,페니토인,N03AB02,TBD-rxnav,inducer,strong,monitor,knowledge,"strong CYP3A4 inducer"
 midazolam,D000007,Midazolam,미다졸람,N05CD08,TBD-rxnav,substrate,,,knowledge,"CYP3A4 substrate — hard-negative pairing anchor (substrate+substrate)"
+cyclosporine,D001077,Cyclosporine,사이클로스포린,L04AD01,TBD-rxnav,inhibitor,moderate,dose-adjust,openFDA-label:drug_interactions,"moderate CYP3A4 inhibitor; named 'an inhibitor of CYP3A4' in atorvastatin label; also a substrate"
+phenobarbital,D000282,Phenobarbital,페노바르비탈,N03AA02,TBD-rxnav,inducer,strong,monitor,openFDA-label:drug_interactions,"CYP3A4 inducer; enumerated as 'CYP3A inducers such as phenobarbital...' in dronedarone label. strength=strong per pharmacology (label omits grade)"

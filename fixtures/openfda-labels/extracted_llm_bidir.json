@@ -1,7 +1,7 @@
 {
   "extractor": "llm",
   "model": "claude-fable-5 (session extraction; reproduce with run_extraction.py --extractor llm)",
-  "direction": "bidirectional (own label + substrate-label enumeration recovery)",
+  "direction": "bidirectional (own-label self-attribution + cross-label enumeration recovery)",
   "note": "Faithful extraction from each drug's OWN openFDA label text. Empty edge lists are HONEST misses where the label does not self-attribute a CYP3A4 role (a source-coverage gap, not an extraction error). strength is emitted only when the label uses a strength adjective (strong/potent/moderate/weak); otherwise null — surfacing that labels frequently omit graded strength.",
   "drugs": {
     "simvastatin": {
@@ -67,12 +67,12 @@
         {
           "role": "inhibitor",
           "enzyme": "CYP3A4",
-          "strength": "strong",
-          "clinical_action": "contraindicated",
-          "evidence_sentence": "Strong inhibitors of CYP3A4 (e.g., itraconazole, ketoconazole, posaconazole, voriconazole, clarithromycin, telithromycin, HIV protease inhibitors, boceprevir, telaprevir, nefazodone, erythromycin, and cobicistat-containing products), and grapefruit juice increase the risk of myopathy by reducing the",
+          "strength": null,
+          "clinical_action": "dose-adjust",
+          "evidence_sentence": "† Results could be representative of the following CYP3A4 inhibitors: ketoconazole, erythromycin, clarithromycin, HIV protease inhibitors, and nefazodone.",
           "negated": false,
           "confidence": 0.75,
-          "recovered_from": "substrate-label:lovastatin"
+          "recovered_from": "inhibitor-cue:simvastatin-label"
         }
       ]
     },
@@ -103,12 +103,12 @@
         {
           "role": "inhibitor",
           "enzyme": "CYP3A4",
-          "strength": "strong",
-          "clinical_action": "contraindicated",
-          "evidence_sentence": "Strong inhibitors of CYP3A4 (e.g., itraconazole, ketoconazole, posaconazole, voriconazole, clarithromycin, telithromycin, HIV protease inhibitors, boceprevir, telaprevir, nefazodone, erythromycin, and cobicistat-containing products), and grapefruit juice increase the risk of myopathy by reducing the",
+          "strength": null,
+          "clinical_action": "dose-adjust",
+          "evidence_sentence": "† Results could be representative of the following CYP3A4 inhibitors: ketoconazole, erythromycin, clarithromycin, HIV protease inhibitors, and nefazodone.",
           "negated": false,
           "confidence": 0.75,
-          "recovered_from": "substrate-label:lovastatin"
+          "recovered_from": "inhibitor-cue:simvastatin-label"
         }
       ]
     },
@@ -119,10 +119,20 @@
           "enzyme": "CYP3A4",
           "strength": null,
           "clinical_action": "dose-adjust",
-          "evidence_sentence": "Clinically significant interactions have been reported with inhibitors of CYP3A4 (e.g., erythromycin, ritonavir) causing elevation of plasma levels of verapamil while inducers of CYP3A4 (e.g., rifampin) have caused a lowering of plasma levels of verapamil.",
+          "evidence_sentence": "( 4 , 5.1 , 7 , 12.3 ) 7.1 Potential for Lopinavir And Ritonavir to Affect Other Drugs Lopinavir/ritonavir is an inhibitor of CYP3A and may increase plasma concentrations of agents that are primarily metabolized by CYP3A.",
           "negated": false,
           "confidence": 0.75,
-          "recovered_from": "substrate-label:verapamil"
+          "recovered_from": "inhibitor-cue:ritonavir-label"
+        },
+        {
+          "role": "substrate",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": null,
+          "evidence_sentence": "7.2 Potential for Other Drugs to Affect Lopinavir Lopinavir/ritonavir is a CYP3A substrate;",
+          "negated": false,
+          "confidence": 0.75,
+          "recovered_from": "substrate-cue:ritonavir-label"
         }
       ]
     },
@@ -171,11 +181,42 @@
           "evidence_sentence": "Lower starting dose of other CYP3A4 substrates may be required.",
           "negated": false,
           "confidence": 0.72
+        },
+        {
+          "role": "substrate",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": null,
+          "evidence_sentence": "( 7 ) Amiodarone is a substrate for CYP3A and CYP2C8, so inhibitors and inducers affect amiodarone exposure.",
+          "negated": false,
+          "confidence": 0.75,
+          "recovered_from": "substrate-cue:amiodarone-label"
         }
       ]
     },
     "dronedarone": {
-      "edges": []
+      "edges": [
+        {
+          "role": "inhibitor",
+          "enzyme": "CYP3A4",
+          "strength": "moderate",
+          "clinical_action": "dose-adjust",
+          "evidence_sentence": "7 DRUG INTERACTIONS Dronedarone is metabolized by CYP3A and is a moderate inhibitor of CYP3A and CYP2D6 and has potentially important pharmacodynamic interactions ( 7 ) • Class I or III antiarrhythmics: Contraindicated.",
+          "negated": false,
+          "confidence": 0.75,
+          "recovered_from": "inhibitor-cue:dronedarone-label"
+        },
+        {
+          "role": "substrate",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": null,
+          "evidence_sentence": "7 DRUG INTERACTIONS Dronedarone is metabolized by CYP3A and is a moderate inhibitor of CYP3A and CYP2D6 and has potentially important pharmacodynamic interactions ( 7 ) • Class I or III antiarrhythmics: Contraindicated.",
+          "negated": false,
+          "confidence": 0.75,
+          "recovered_from": "substrate-cue:dronedarone-label"
+        }
+      ]
     },
     "rifampin": {
       "edges": [
@@ -213,10 +254,32 @@
       ]
     },
     "phenytoin": {
-      "edges": []
+      "edges": [
+        {
+          "role": "inducer",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": "monitor",
+          "evidence_sentence": "Rifampin and Other CYP3A Inducers Avoid rifampin or other CYP3A inducers such as phenobarbital, carbamazepine, phenytoin, and St.",
+          "negated": false,
+          "confidence": 0.75,
+          "recovered_from": "inducer-cue:dronedarone-label"
+        }
+      ]
     },
     "midazolam": {
-      "edges": []
+      "edges": [
+        {
+          "role": "substrate",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": null,
+          "evidence_sentence": "Metabolism : In vitro studies with human liver microsomes indicate that the biotransformation of midazolam is mediated by cytochrome P450-3A4.",
+          "negated": false,
+          "confidence": 0.75,
+          "recovered_from": "substrate-cue:midazolam-label"
+        }
+      ]
     },
     "fluconazole": {
       "edges": [
@@ -245,10 +308,42 @@
       ]
     },
     "phenobarbital": {
-      "edges": []
+      "edges": [
+        {
+          "role": "inducer",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": "monitor",
+          "evidence_sentence": "Rifampin and Other CYP3A Inducers Avoid rifampin or other CYP3A inducers such as phenobarbital, carbamazepine, phenytoin, and St.",
+          "negated": false,
+          "confidence": 0.75,
+          "recovered_from": "inducer-cue:dronedarone-label"
+        }
+      ]
     },
     "cyclosporine": {
-      "edges": []
+      "edges": [
+        {
+          "role": "inhibitor",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": "dose-adjust",
+          "evidence_sentence": "Table 2: Drug Interactions that may Increase the Risk of Myopathy and Rhabdomyolysis with Atorvastatin Cyclosporine or Gemfibrozil Clinical Impact: Atorvastatin plasma levels were significantly increased with concomitant administration of atorvastatin and cyclosporine, an inhibitor of CYP3A4 and OAT",
+          "negated": false,
+          "confidence": 0.75,
+          "recovered_from": "inhibitor-cue:atorvastatin-label"
+        },
+        {
+          "role": "substrate",
+          "enzyme": "CYP3A4",
+          "strength": null,
+          "clinical_action": null,
+          "evidence_sentence": "Both cyclosporine and tacrolimus are substrates of CYP3A4, and nefazodone is known to inhibit this enzyme.",
+          "negated": false,
+          "confidence": 0.75,
+          "recovered_from": "substrate-cue:nefazodone-label"
+        }
+      ]
     }
   }
 }

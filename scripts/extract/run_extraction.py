@@ -156,7 +156,9 @@ def llm_extract(drug, sections, model):
         system=LLM_SYSTEM,
         messages=[{"role": "user", "content": user}],
     )
-    raw = resp.content[0].text.strip()
+    # models with extended thinking emit a ThinkingBlock before the text block,
+    # so pick the text block(s) rather than assuming content[0] is text
+    raw = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
     # tolerate ```json fences
     m = re.search(r"\[.*\]", raw, re.DOTALL)
     if not m:
