@@ -193,3 +193,27 @@ role 매칭이라 영향 없음.
 erythromycin·ketoconazole·diltiazem·nefazodone의 substrate 등) — 라벨이 해당 약을 CYP3A4 기질이라고
 **약명 앵커드로 술어화하지 않아** 정직하게 비워둠(P/R 무영향, 허구 회피). 재현: 위 §방법의
 `augment_bidirectional.py` 커맨드 그대로.
+
+### LLM 독립 교차검증 (claude-sonnet-5) — 과적합 반증
+
+결정론 파이프라인이 이 22약 단일저자 gold에서 P/R/F1 = **1.00**을 낸다. "그럼 cue 규칙을 gold에
+맞춰 튜닝한 과적합 아니냐"는 정당한 의심을 **독립 모델로** 반증했다. 같은 corpus를 `claude-sonnet-5`로
+새로 추출(`run_extraction.py --extractor llm`) 후 같은 `augment_bidirectional.py`를 얹은 결과:
+
+| 파이프라인 | Precision | Recall | F1 | strength acc |
+|---|---|---|---|---|
+| 결정론(커밋 시드 + miner) | 1.00 | 1.00 | 1.00 | 0.31 |
+| **LLM sonnet-5 단방향** | 0.95 | 0.65 | 0.77 | **0.89** |
+| **LLM sonnet-5 + miner(bidir)** | 0.97 | 0.95 | 0.96 | 0.53 |
+
+- **핵심:** 독립 강력 모델이 required 역할 20건 중 **19건을 재현**. 즉 회수 엣지들은 실제 라벨에
+  존재하는 관계이지, 규칙을 gold에 억지로 맞춘 산물이 아니다.
+- 신선 실행의 미세 차이는 **허구가 아님**: diltiazem은 중복 inhibitor 엣지(dedup 아티팩트, FP 1),
+  amiodarone은 inhibitor 누락(자기 라벨 침묵 + 이번 시드에선 열거 라벨에 미포착, FN 1).
+- **strength 정직성 반전:** LLM 단방향은 라벨의 등급어("moderate inhibitor")를 직접 읽어
+  strength 정확도 **0.89** — 정규식 miner가 null로 남기는 지점을 LLM이 채운다. 향후 field 정확도는
+  LLM 경로가 우위.
+- **한계 명시:** 1.00은 22약·단일저자 gold 상의 수치다. 미검증 약으로의 일반화는 입증되지 않았으며
+  약사 sanity-check 대상.
+- **버그 수정:** `run_extraction.py`의 LLM 응답 파싱이 `resp.content[0].text`를 가정해
+  extended-thinking 모델(첫 블록이 ThinkingBlock)에서 크래시 → text 블록만 골라 연결하도록 수정.
