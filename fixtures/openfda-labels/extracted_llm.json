@@ -1,0 +1,30 @@
+{
+  "extractor": "llm",
+  "model": "claude-fable-5 (session extraction; reproduce with run_extraction.py --extractor llm)",
+  "direction": "single (each drug's own label only)",
+  "note": "Faithful extraction from each drug's OWN openFDA label text. Empty edge lists are HONEST misses where the label does not self-attribute a CYP3A4 role (a source-coverage gap, not an extraction error). strength is emitted only when the label uses a strength adjective (strong/potent/moderate/weak); otherwise null — surfacing that labels frequently omit graded strength.",
+  "drugs": {
+    "simvastatin": {"edges": [{"role": "substrate", "enzyme": "CYP3A4", "strength": null, "clinical_action": null, "evidence_sentence": "Simvastatin is a substrate of CYP3A4 and of the transport protein OATP1B1.", "negated": false, "confidence": 0.98}]},
+    "lovastatin": {"edges": [{"role": "substrate", "enzyme": "CYP3A4", "strength": null, "clinical_action": null, "evidence_sentence": "Lovastatin is metabolized by CYP3A4 but has no CYP3A4 inhibitory activity.", "negated": false, "confidence": 0.98}]},
+    "atorvastatin": {"edges": [{"role": "substrate", "enzyme": "CYP3A4", "strength": null, "clinical_action": null, "evidence_sentence": "Atorvastatin is a substrate of CYP3A4 and transporters.", "negated": false, "confidence": 0.98}]},
+    "pravastatin": {"edges": []},
+    "rosuvastatin": {"edges": []},
+    "clarithromycin": {"edges": [{"role": "inhibitor", "enzyme": "CYP3A4", "strength": "strong", "clinical_action": "contraindicated", "evidence_sentence": "Concomitant administration of clarithromycin with statins that are extensively metabolized by CYP3A4 (lovastatin or simvastatin) is contraindicated.", "negated": false, "confidence": 0.95}]},
+    "erythromycin": {"edges": []},
+    "itraconazole": {"edges": [{"role": "inhibitor", "enzyme": "CYP3A4", "strength": "strong", "clinical_action": "contraindicated", "evidence_sentence": "Itraconazole and its major metabolite, hydroxy-itraconazole, are potent CYP3A4 inhibitors.", "negated": false, "confidence": 0.97}, {"role": "substrate", "enzyme": "CYP3A4", "strength": null, "clinical_action": null, "evidence_sentence": "In vitro studies have shown that CYP3A4 is the major enzyme involved in the metabolism of itraconazole.", "negated": false, "confidence": 0.8}]},
+    "ketoconazole": {"edges": []},
+    "ritonavir": {"edges": []},
+    "diltiazem": {"edges": [{"role": "inhibitor", "enzyme": "CYP3A4", "strength": null, "clinical_action": "dose-adjust", "evidence_sentence": "Diltiazem is an inhibitor of CYP3A4 and has been shown to increase significantly the AUC of some statins.", "negated": false, "confidence": 0.9}]},
+    "verapamil": {"edges": [{"role": "inhibitor", "enzyme": "CYP3A4", "strength": null, "clinical_action": "dose-adjust", "evidence_sentence": "Lower starting and maintenance doses of other CYP3A4 substrates (e.g., atorvastatin) may be required as verapamil may increase the plasma concentration of these drugs.", "negated": false, "confidence": 0.85}, {"role": "substrate", "enzyme": "CYP3A4", "strength": null, "clinical_action": null, "evidence_sentence": "In vitro metabolic studies indicate that verapamil is metabolized by cytochrome P450 CYP3A4, CYP1A2, CYP2C8, CYP2C9, and CYP2C18.", "negated": false, "confidence": 0.85}]},
+    "amiodarone": {"edges": [{"role": "inhibitor", "enzyme": "CYP3A4", "strength": null, "clinical_action": "dose-adjust", "evidence_sentence": "Lower starting dose of other CYP3A4 substrates may be required.", "negated": false, "confidence": 0.72}]},
+    "dronedarone": {"edges": []},
+    "rifampin": {"edges": [{"role": "inducer", "enzyme": "CYP3A4", "strength": "strong", "clinical_action": "avoid", "evidence_sentence": "Avoid the use of rifampin, a strong CYP3A4 inducer, if possible.", "negated": false, "confidence": 0.95}]},
+    "carbamazepine": {"edges": [{"role": "inducer", "enzyme": "CYP3A4", "strength": "strong", "clinical_action": "monitor", "evidence_sentence": "The use of concomitant strong CYP3A4 inducers such as carbamazepine should be avoided with temsirolimus.", "negated": false, "confidence": 0.9}, {"role": "substrate", "enzyme": "CYP3A4", "strength": null, "clinical_action": null, "evidence_sentence": "CYP3A4 inhibitors inhibit carbamazepine metabolism and can thus increase plasma carbamazepine levels.", "negated": false, "confidence": 0.82}]},
+    "phenytoin": {"edges": []},
+    "midazolam": {"edges": []},
+    "fluconazole": {"edges": [{"role": "inhibitor", "enzyme": "CYP3A4", "strength": null, "clinical_action": "contraindicated", "evidence_sentence": "Coadministration of other drugs metabolized via CYP3A4 such as erythromycin, pimozide, and quinidine are contraindicated in patients receiving fluconazole.", "negated": false, "confidence": 0.7}]},
+    "nefazodone": {"edges": [{"role": "inhibitor", "enzyme": "CYP3A4", "strength": null, "clinical_action": "contraindicated", "evidence_sentence": "These effects appear to be due to the inhibition of CYP3A4 by nefazodone.", "negated": false, "confidence": 0.9}]},
+    "phenobarbital": {"edges": []},
+    "cyclosporine": {"edges": []}
+  }
+}

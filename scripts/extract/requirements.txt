@@ -1,0 +1,2 @@
+requests>=2.31
+anthropic>=0.40   # only needed for run_extraction.py --extractor llm
